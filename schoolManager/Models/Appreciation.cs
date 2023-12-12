@@ -1,4 +1,4 @@
-﻿namespace schoolManager;
+﻿namespace schoolManager.Models;
 
 public class Appreciation : Eval
 {
