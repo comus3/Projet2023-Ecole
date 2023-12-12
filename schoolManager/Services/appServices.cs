@@ -2,7 +2,7 @@
 //qui vont etres utilises par lapp
 //a faire: save ,load ,modfiy(immuable?)
 //
-
+using schoolManager.DAL;
 using schoolManager.Models;
 
 namespace schoolManager.Services
