@@ -1,5 +1,13 @@
 //meme principe que pour la classe mere mais cest la suite en gros
 
+
+// OBSELETE
+//
+// This is the old version (at least what we started)
+// the app now is implemented using json instead of 
+// sql for facility but the code is here for potential
+// future implementation
+
 using System;
 using System.Linq;
 using System.Linq.Expressions;

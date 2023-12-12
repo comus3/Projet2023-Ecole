@@ -1,5 +1,13 @@
 //classe mere qui va communiquer avec db
 // confer le model de mr nguyen en js (meme idee)
+
+// OBSELETE
+//
+// This is the old version (at least what we started)
+// the app now is implemented using json instead of 
+// sql for facility but the code is here for potential
+// future implementation
+
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
