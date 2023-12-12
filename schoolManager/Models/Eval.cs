@@ -1,4 +1,4 @@
-﻿namespace seance2;
+﻿namespace schoolManager;
 
 public abstract class Eval
 {
