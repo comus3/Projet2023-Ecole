@@ -3,7 +3,7 @@
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
-namespace schoolManager.DataAccess
+namespace schoolManager.DAL
 {
     public class DatabaseContext : DbContext
     {
