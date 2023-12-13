@@ -10,16 +10,16 @@
 // sql for facility but the code is here for potential
 // future implementation
 
-using schoolManager.Models; // Import your entity model
+// using schoolManager.Models; // Import your entity model
 
-namespace schoolManager.DAL.Repositories
-{
-    public class Table1Repository : BaseRepository<Table1Entity>
-    {
-        public Table1Repository(DatabaseContext context) : base(context)
-        {
-        }
+// namespace schoolManager.DAL.Repositories
+// {
+//     public class Table1Repository : BaseRepository<Table1Entity>
+//     {
+//         public Table1Repository(DatabaseContext context) : base(context)
+//         {
+//         }
 
-        // Add specific methods for Table1 if needed
-    }
-}
+//         // Add specific methods for Table1 if needed
+//     }
+// }
