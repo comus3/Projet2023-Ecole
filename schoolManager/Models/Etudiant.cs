@@ -5,8 +5,8 @@ public class Etudiant : Person
     List<Eval> evaluations;
     public List<Etudiant> listEtudiant;
 
-    public Etudiant(string firstName,string lastName,List<Eval> evaluations,List<Etudiant> listEtudiant) :
-    base(firstName,lastName)
+    public Etudiant(string firstName,string lastName,List<Eval> evaluations,List<Etudiant> listEtudiant,List<Person> listPerson) :
+    base(firstName,lastName,listPerson)
     {
         this.evaluations = evaluations;
         listEtudiant.Add(this);
