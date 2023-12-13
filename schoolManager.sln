@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "schoolManager", "schoolManager\schoolManager.csproj", "{919D1413-AB52-4459-BCFF-9D288DEB8F8C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "schoolManager", "schoolManager", "{83BA7E67-B978-4032-BF4A-3CB6680AC541}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "re", "re", "{26C49945-45C9-4217-BF68-0DFC7798C5A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "schoolManager\re\Test\Test.csproj", "{1B749E3F-5A69-4AC8-919B-EB335F6F724B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,13 @@ Global
 		{919D1413-AB52-4459-BCFF-9D288DEB8F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{919D1413-AB52-4459-BCFF-9D288DEB8F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{919D1413-AB52-4459-BCFF-9D288DEB8F8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B749E3F-5A69-4AC8-919B-EB335F6F724B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B749E3F-5A69-4AC8-919B-EB335F6F724B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B749E3F-5A69-4AC8-919B-EB335F6F724B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B749E3F-5A69-4AC8-919B-EB335F6F724B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26C49945-45C9-4217-BF68-0DFC7798C5A3} = {83BA7E67-B978-4032-BF4A-3CB6680AC541}
+		{1B749E3F-5A69-4AC8-919B-EB335F6F724B} = {26C49945-45C9-4217-BF68-0DFC7798C5A3}
 	EndGlobalSection
 EndGlobal

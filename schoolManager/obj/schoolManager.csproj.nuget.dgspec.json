@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\comep\\OneDrive\\Documents\\ECAM\\2023_2024\\Q1\\Csharp\\PROJET\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj": {}
+    "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\comep\\OneDrive\\Documents\\ECAM\\2023_2024\\Q1\\Csharp\\PROJET\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj": {
+    "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\comep\\OneDrive\\Documents\\ECAM\\2023_2024\\Q1\\Csharp\\PROJET\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
+        "projectUniqueName": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
         "projectName": "schoolManager",
-        "projectPath": "C:\\Users\\comep\\OneDrive\\Documents\\ECAM\\2023_2024\\Q1\\Csharp\\PROJET\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
-        "packagesPath": "C:\\Users\\comep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\comep\\OneDrive\\Documents\\ECAM\\2023_2024\\Q1\\Csharp\\PROJET\\Projet2023-Ecole\\schoolManager\\obj\\",
+        "projectPath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
+        "packagesPath": "C:\\Users\\Cath\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\comep\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Cath\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0-android",
