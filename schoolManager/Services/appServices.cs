@@ -7,7 +7,7 @@ using schoolManager.Models;
 
 namespace schoolManager.Services
 {
-    public class AppSercices
+    public class AppServices
     {
         private readonly JsonDataAccess jsonDataAccess;
         private Dictionary<string, List<Dictionary<string,string>>> data;
@@ -17,9 +17,9 @@ namespace schoolManager.Services
         public List<Eval> listEval;
         public List<Person> listPerson;
 
-        public void AppServices()
+        public AppServices()
         {
-            this.jsonDataAccess = new JsonDataAccess("ICI LE FILE PATH PR LE JSON");
+            jsonDataAccess = new JsonDataAccess("ICI LE FILE PATH PR LE JSON");
             InitializeData();
         }
 
@@ -41,32 +41,24 @@ namespace schoolManager.Services
 
         // NEW OBJECTS METHODS(constructors)
         public Activite createActivite(string Name,string Code,Enseignant enseignant,int ECTS){
-            activite = new Activite(Name,Code,enseignant,ECTS,List<Activite> listActivite);
+            Activite activite = new Activite(Name,Code,enseignant,ECTS,listActivite);
             return activite;
         }
-        public Appreciation createAppreciation(string appreciation,Activite activite){
-            appreciation = new Appreciation(appreciation,activite);
+        public Appreciation createAppreciation(string appreciationSTR,Activite activite){
+            Appreciation appreciation = new Appreciation(appreciationSTR,activite,listEval);
             return appreciation;
         }
         public Cote createCote(int note,Activite activite){
-            cote = new Cote(note,activite);
+            Cote cote = new Cote(note,activite,listEval);
             return cote;
         }
         public Enseignant createEnseignant(int salaire,string firstName,string lastName){
-            enseignant = new Enseignant(salaire,firstName,lastName,listEnseignant);
+            Enseignant enseignant = new Enseignant(salaire,firstName,lastName,listEnseignant,listPerson);
             return enseignant;
         }
         public Etudiant createEtudiant(string firstName,string lastName,List<Eval> evaluations){
-            etudiant = new Etudiant(firstName,lastName,evaluations,listEtudiant);
+            Etudiant etudiant = new Etudiant(firstName,lastName,evaluations,listEtudiant,listPerson);
             return etudiant;
-        }
-        public Cote createCote(int note,Activite activite){
-            cote = new Cote(note,activite);
-            return cote;
-        }
-        public Appreciation createAppreciation(string appreciation,Activite activite){
-            appreciation = new Appreciation(appreciation,activite);
-            return appreciation;
         }
 
     }
