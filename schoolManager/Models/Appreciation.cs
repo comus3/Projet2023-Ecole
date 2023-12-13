@@ -3,10 +3,11 @@
 public class Appreciation : Eval
 {
     private string appreciation;
-    public Appreciation(string appreciation,Activite activite,List<Eval> listEval):
+    public Appreciation(string appreciation,Activite activite,List<Appreciation> listAppreciation,List<Eval> listEval):
     base(activite,listEval)
     {
         this.appreciation = appreciation;
+        listAppreciation.Add(this);
     }
     public override int Note()
     {
