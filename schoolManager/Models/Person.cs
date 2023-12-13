@@ -6,7 +6,7 @@ public class Person
     private readonly string lastName;
     public List<Person> listPerson;
 
-    public Person(string firstName,string lastName)
+    public Person(string firstName,string lastName,List<Person> listPerson)
     {
         this.firstName = firstName;
         this.lastName = lastName;
