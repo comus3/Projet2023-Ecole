@@ -38,13 +38,16 @@ namespace schoolManager.DAL
             catch (JsonException ex)
             {
                 Console.WriteLine($"Error deserializing JSON from file {filePath}: {ex.Message}");
-                return -1;
+                return new Dictionary<string, List<Dictionary<string,string>>>();
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"An unexpected error occurred: {ex.Message}");
-                return -1;
+                return new Dictionary<string, List<Dictionary<string,string>>>();
             }
+        }
+        public void SaveData(Dictionary<string, List<Dictionary<string,string>>> data){
+            
         }
 
 
