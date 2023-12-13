@@ -1,0 +1,12 @@
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\schoolManager.csproj.AssemblyReference.cache
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\schoolManager.GeneratedMSBuildEditorConfig.editorconfig

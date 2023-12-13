@@ -7,27 +7,67 @@ using schoolManager.Models;
 
 namespace schoolManager.Services
 {
-    public class ModelSercices
+    public class AppSercices
     {
         private readonly JsonDataAccess jsonDataAccess;
-        private Dictionary<string, Dictionary<string, object>> data;
+        private Dictionary<string, List<Dictionary<string,string>>> data;
+        public List<Activite> listActivite;
+        public List<Enseignant> listEnseignant;
+        public List<Etudiant> listEtudiant;
+        public List<Eval> listEval;
+        public List<Person> listPerson;
 
-        public void ModelServices(JsonDataAccess jsonDataAccess)
+        public void AppServices()
         {
-            this.jsonDataAccess = jsonDataAccess;
+            this.jsonDataAccess = new JsonDataAccess("ICI LE FILE PATH PR LE JSON");
             InitializeData();
         }
 
         private void InitializeData()
         {
             data = jsonDataAccess.LoadData();
+            listActivite = new List<Activite>{};
+            listEnseignant = new List<Enseignant>{};
+            listEtudiant = new List<Etudiant>{};
+            listEval = new List<Eval>{};
+            listPerson = new List<Person>{};
         }
 
         public void SaveChanges()
         {
+            //make new data from all lists of objects
             jsonDataAccess.SaveData(data);
         }
 
-        // Add methods for manipulating the data, e.g., adding, updating, deleting items
+        // NEW OBJECTS METHODS(constructors)
+        public Activite createActivite(string Name,string Code,Enseignant enseignant,int ECTS){
+            activite = new Activite(Name,Code,enseignant,ECTS,List<Activite> listActivite);
+            return activite;
+        }
+        public Appreciation createAppreciation(string appreciation,Activite activite){
+            appreciation = new Appreciation(appreciation,activite);
+            return appreciation;
+        }
+        public Cote createCote(int note,Activite activite){
+            cote = new Cote(note,activite);
+            return cote;
+        }
+        public Enseignant createEnseignant(int salaire,string firstName,string lastName){
+            enseignant = new Enseignant(salaire,firstName,lastName,listEnseignant);
+            return enseignant;
+        }
+        public Etudiant createEtudiant(string firstName,string lastName,List<Eval> evaluations){
+            etudiant = new Etudiant(firstName,lastName,evaluations,listEtudiant);
+            return etudiant;
+        }
+        public Cote createCote(int note,Activite activite){
+            cote = new Cote(note,activite);
+            return cote;
+        }
+        public Appreciation createAppreciation(string appreciation,Activite activite){
+            appreciation = new Appreciation(appreciation,activite);
+            return appreciation;
+        }
+
     }
 }

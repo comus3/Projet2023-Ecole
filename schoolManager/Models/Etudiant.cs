@@ -3,10 +3,13 @@
 public class Etudiant : Person
 {
     List<Eval> evaluations;
-    public Etudiant(string firstName,string lastName,List<Eval> evaluations) :
+    public List<Etudiant> listEtudiant;
+
+    public Etudiant(string firstName,string lastName,List<Eval> evaluations,List<Etudiant> listEtudiant) :
     base(firstName,lastName)
     {
         this.evaluations = evaluations;
+        listEtudiant.Add(this);
     }
     public void Add(Eval eval)
     {
