@@ -12,7 +12,7 @@ namespace schoolManager.Services
         private readonly JsonDataAccess jsonDataAccess;
         private Dictionary<string, Dictionary<string, object>> data;
 
-        public ModelServices(JsonDataAccess jsonDataAccess)
+        public void ModelServices(JsonDataAccess jsonDataAccess)
         {
             this.jsonDataAccess = jsonDataAccess;
             InitializeData();
