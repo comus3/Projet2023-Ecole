@@ -21,7 +21,7 @@ namespace schoolManager.DAL
             this.filePath = filePath;
         }
 
-        public Dictionary<string, Dictionary<string, object>> LoadData()
+        public Dictionary<string, List<Dictionary<string,string>>> LoadData()
         {
             try
             {
