@@ -7,7 +7,7 @@
 //chaque value-key int du dico rep ses attributs
 using System.Collections.Generic;
 using System.IO;
-using System.Text.Json;
+//using System.Text.Json;
 using Newtonsoft.Json;
 
 namespace schoolManager.DAL
@@ -46,8 +46,27 @@ namespace schoolManager.DAL
                 return new Dictionary<string, List<Dictionary<string,string>>>();
             }
         }
-        public void SaveData(Dictionary<string, List<Dictionary<string,string>>> data){
-            
+        public int SaveData(Dictionary<string, List<Dictionary<string,string>>> data){
+            string newfilePath = filePath.Substring(0,filePath.Length-19) + DateTime.Now;
+            Console.WriteLine($"trying to write backup on :{newfilePath}");
+            try
+            {
+                JsonConvert.SerializeObject<Dictionary<string, List<Dictionary<string,string>>>>(data);
+            }
+            catch (JsonException ex)
+            {
+                Console.WriteLine($"Error deserializing JSON from file {filePath}: {ex.Message}");
+                return -1;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+                return -1;
+            }
+            finally
+            {
+                return 0;
+            }
         }
 
 
