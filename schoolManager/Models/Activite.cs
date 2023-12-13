@@ -6,12 +6,14 @@ public class Activite
     public string Name;
     public string Code;
     public Enseignant enseignant;
-    public Activite(string Name,string Code,Enseignant enseignant,int ECTS)
+    public List<Activite> listActivite;
+    public Activite(string Name,string Code,Enseignant enseignant,int ECTS,List<Activite> listActivite)
     {
         this.Name = Name;
         this.Code = Code;
         this.enseignant = enseignant;
         this.ECTS = ECTS;
+        listActivite.Add(this);
     }
     
 
