@@ -16,6 +16,8 @@ namespace schoolManager.Services
         public List<Etudiant> listEtudiant;
         public List<Eval> listEval;
         public List<Person> listPerson;
+        public List<Appreciation> listAppreciation;
+        public List<Cote> listCote;
         private string filePath;
         //METHODES PUBLIQUES
         public AppServices()
@@ -29,12 +31,13 @@ namespace schoolManager.Services
             //make new data from all lists of objects
             //pack all data
             //EXEMPLE DATA
-            Dictionary<string, List<string>> packedData = new Dictionary<string, List<string>>
-            {
-                { "Activite", new List<string> { "Value11", "Value12", "Value13" } },
-                { "Appreciation", new List<string> { "Value21", "Value22" } },
-                { "Cote", new List<string> { "Value31", "Value32", "Value33", "Value34" } }
-            };
+            // Dictionary<string, List<string>> packedData = new Dictionary<string, List<string>>
+            // {
+            //     { "Activite", new List<string> { "Value11", "Value12", "Value13" } },
+            //     { "Appreciation", new List<string> { "Value21", "Value22" } },
+            //     { "Cote", new List<string> { "Value31", "Value32", "Value33", "Value34" } }
+            // };
+            Dictionary<string, List<string>> packedData = packAll();
             JsonDataAccess.WriteDictionaryToFile(packedData,JsonDataAccess.GenerateBackupName());
         }
 
@@ -44,11 +47,11 @@ namespace schoolManager.Services
             return activite;
         }
         public Appreciation createAppreciation(string appreciationSTR,Activite activite){
-            Appreciation appreciation = new Appreciation(appreciationSTR,activite,listEval);
+            Appreciation appreciation = new Appreciation(appreciationSTR,activite,listAppreciation,listEval);
             return appreciation;
         }
         public Cote createCote(int note,Activite activite){
-            Cote cote = new Cote(note,activite,listEval);
+            Cote cote = new Cote(note,activite,listCote,listEval);
             return cote;
         }
         public Enseignant createEnseignant(int salaire,string firstName,string lastName){
@@ -72,10 +75,74 @@ namespace schoolManager.Services
             unpackAll(data);
         }
         //packer and unpackers
+        private Dictionary<string, List<string>> packAll()
+        {
+            List<string> dicoKeys = new List<string>{"Etudiant","Enseignant","Cote","Appreciation","Activite"};
+            Dictionary<string, List<string>> output = new Dictionary<string, List<string>>{};
+            foreach (string keyName in dicoKeys)
+            {
+                switch (keyName)
+                {
+                    case "Etudiant":
+                        List<string> packedObjectListEtudiant = new List<string>{};
+                        foreach (object packableItem in listEtudiant)
+                        {
+                            packedObjectListEtudiant.Add(pack(packableItem));
+                        }
+                        output[keyName] = packedObjectListEtudiant;
+                        break;
+
+                    case "Enseignant":
+                        List<string> packedObjectListEnseignant = new List<string>{};
+                        foreach (object packableItem in listEnseignant)
+                        {
+                            packedObjectListEnseignant.Add(pack(packableItem));
+                        }
+                        output[keyName] = packedObjectListEnseignant;
+                        break;
+
+                    case "Cote":
+                        List<string> packedObjectListCote = new List<string>{};
+                        foreach (object packableItem in listCote)
+                        {
+                            packedObjectListCote.Add(pack(packableItem));
+                        }
+                        output[keyName] = packedObjectListCote;
+                        break;
+                    case "Appreciation":
+                        List<string> packedObjectListAppreciation = new List<string>{};
+                        foreach (object packableItem in listAppreciation)
+                        {
+                            packedObjectListAppreciation.Add(pack(packableItem));
+                        }
+                        output[keyName] = packedObjectListAppreciation;
+                        break;
+                    case "Activite":
+                        List<string> packedObjectListActivite = new List<string>{};
+                        foreach (object packableItem in listActivite)
+                        {
+                            packedObjectListActivite.Add(pack(packableItem));
+                        }
+                        output[keyName] = packedObjectListActivite;
+                        break;
+
+                    default:
+                        Console.WriteLine("how did we get here?");
+                        break;
+                }
+            }
+            return output;
+        } 
+        private string pack(object item)
+        {
+            //take any object and make it into a dictionary
+            string output = JsonConvert.SerializeObject(item);
+            return output;
+        }
         private void unpackAll(Dictionary<string, List<string>> data)
         {
             //call all unpackers with a switch case and consequently generate alll objects
-            // unpacking order MUST BE :  Enseignant => Activite => Evaluations (cotes appreciations packed into a list) => Etudiants
+            // unpacking order MUST BE :  Enseignant => Activite => Evaluations (cotes,appreciations packed into a list) => Etudiants
 
             //for the appreciations and cotes maybe add attribute id that represents from which student the eval is so that you can associate it with after
 
@@ -166,12 +233,7 @@ namespace schoolManager.Services
             }
    
         }
-        private string pack(object item)
-        {
-            //take any object and make it into a dictionary
-            string output = JsonConvert.SerializeObject(item);
-            return output;
-        }
+        
         private Activite unpackActivite(string packedItem)
         {
             //unpack object
