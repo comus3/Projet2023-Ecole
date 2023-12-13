@@ -8,50 +8,69 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-using Newtonsoft.Json;
+
 
 namespace schoolManager.DAL
 {
     public class JsonDataAccess
     {
-        private readonly string filePath;
-
-        public JsonDataAccess(string filePath)
+        public static string GenerateBackupName()
         {
-            this.filePath = filePath;
+            // Create a string with the format "data_Backup_Of_23-12-13_16:34:08"
+            string prefix = "data_Backup_Of_";
+            string timestamp = DateTime.Now.ToString("yy-MM-dd_HH:mm:ss");
+            
+            // Combine all parts to form the final name
+            string backupName = $"{prefix}{timestamp}";
+
+            return backupName;
         }
-
-        public Dictionary<string, List<Dictionary<string,string>>> LoadData()
+        public static Dictionary<string, List<string>> ReadDictionaryFromFile(string filePath)
         {
+            Dictionary<string, List<string>> resultDictionary = new Dictionary<string, List<string>>();
+
             try
             {
-                if (File.Exists(filePath))
+                using (StreamReader reader = new StreamReader(filePath))
                 {
-                    var json = File.ReadAllText(filePath);
-                    return JsonConvert.DeserializeObject<Dictionary<string, List<Dictionary<string,string>>>>(json);
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        // Assuming the file format is key:value1,value2,value3,...
+                        string[] parts = line.Split(':');
+                        string key = parts[0].Trim();
+                        List<string> values = new List<string>(parts[1].Split(','));
+
+                        resultDictionary[key] = values;
+                    }
                 }
-                else
-                {
-                    throw new Exception($"File not found at path: {filePath}");
-                }
-            }
-            catch (JsonException ex)
-            {
-                Console.WriteLine($"Error deserializing JSON from file {filePath}: {ex.Message}");
-                return new Dictionary<string, List<Dictionary<string,string>>>();
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
-                return new Dictionary<string, List<Dictionary<string,string>>>();
+                Console.WriteLine($"An error occurred while reading from the file: {ex.Message}");
+            }
+            return resultDictionary;
+        }
+        public static void WriteDictionaryToFile(Dictionary<string, List<string>> dictionary, string newfilePath)
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(newfilePath))
+                {
+                    foreach (var kvp in dictionary)
+                    {
+                        // Writing key and values to the file in the format key:value1,value2,value3,...
+                        string line = $"{kvp.Key}:{string.Join(",", kvp.Value)}";
+                        writer.WriteLine(line);
+                    }
+                }
+
+                Console.WriteLine($"Dictionary successfully written to {newfilePath}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred while writing to the file: {ex.Message}");
             }
         }
-        public void SaveData(Dictionary<string, List<Dictionary<string,string>>> data){
-            
-        }
-
-
-
-
     }
 }
