@@ -7,10 +7,18 @@ using schoolManager.Models;
 
 namespace schoolManager.Services
 {
-    public class ModelSercices
+    public class AppSercices
     {
         private readonly JsonDataAccess jsonDataAccess;
-        private Dictionary<string, Dictionary<string, object>> data;
+        private Dictionary<string, List<Dictionary<string,string>>> data;
+        public List<Activite> listActivite;
+        public List<Enseignant> listEnseignant;
+        public List<Etudiant> listEtudiant;
+        public List<Eval> listEval;
+        public List<Person> listPerson;
+
+
+
 
         public void ModelServices(JsonDataAccess jsonDataAccess)
         {
@@ -21,10 +29,16 @@ namespace schoolManager.Services
         private void InitializeData()
         {
             data = jsonDataAccess.LoadData();
+            listActivite = new List<Activite>{};
+            listEnseignant = new List<Enseignant>{};
+            listEtudiant = new List<Etudiant>{};
+            listEval = new List<Eval>{};
+            listPerson = new List<Person>{};
         }
 
         public void SaveChanges()
         {
+            //make new data from all lists of objects
             jsonDataAccess.SaveData(data);
         }
 
