@@ -6,7 +6,7 @@ public class Activite
     public string Name;
     public string Code;
     public Enseignant enseignant;
-    public static List<Activite> listActivite;
+    private static List<Activite> listActivite;
     public Activite(string Name,string Code,Enseignant enseignant,int ECTS)
     {
         this.Name = Name;
@@ -15,6 +15,8 @@ public class Activite
         this.ECTS = ECTS;
         listActivite.Add(this);
     }
-    
-
+    public static List<Activite> getListActivite()
+    {
+        return listActivite;
+    }
 }

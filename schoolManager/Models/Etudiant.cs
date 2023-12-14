@@ -3,7 +3,7 @@
 public class Etudiant : Person
 {
     public List<Eval> evaluations;
-    public static List<Etudiant> listEtudiant;
+    private static List<Etudiant> listEtudiant;
 
     public Etudiant(string firstName,string lastName,List<Eval> evaluations) :
     base(firstName,lastName)
@@ -37,5 +37,9 @@ public class Etudiant : Person
         }
         output += string.Format("Pour une fabuleuse moyenne de {0}. Bravo {1}!",Average(),displayName());
         return output;
+    }
+    public static List<Etudiant> getListEtudiant()
+    {
+        return listEtudiant;
     }
 }

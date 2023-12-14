@@ -4,7 +4,7 @@ public class Person
 {
     private readonly string firstName;
     private readonly string lastName;
-    public static List<Person> listPerson;
+    private static List<Person> listPerson;
 
     public Person(string firstName,string lastName)
     {
@@ -27,5 +27,9 @@ public class Person
         get {
             return lastName;
         }
+    }
+    public static List<Person> getListPerson()
+    {
+        return listPerson;
     }
 }

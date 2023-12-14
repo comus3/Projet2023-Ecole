@@ -3,7 +3,7 @@
 public abstract class Eval
 {
     public Activite activite;
-    public static List<Eval> listEval;
+    private static List<Eval> listEval;
 
     public Eval(Activite activite)
     {
@@ -11,6 +11,9 @@ public abstract class Eval
         listEval.Add(this);
     }
     public abstract int Note();
-    
+    public static List<Eval> getListEval()
+    {
+        return listEval;
+    }
 
 }
