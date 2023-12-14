@@ -84,6 +84,10 @@
               "version": "[7.0.92, )",
               "autoReferenced": true
             },
+            "Microsoft.VisualStudio.UnitTesting": {
+              "target": "Package",
+              "version": "[11.0.50727.1, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -206,6 +210,10 @@
               "version": "[7.0.92, )",
               "autoReferenced": true
             },
+            "Microsoft.VisualStudio.UnitTesting": {
+              "target": "Package",
+              "version": "[11.0.50727.1, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -272,6 +280,10 @@
               "target": "Package",
               "version": "[7.0.92, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.UnitTesting": {
+              "target": "Package",
+              "version": "[11.0.50727.1, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -345,6 +357,10 @@
               "target": "Package",
               "version": "[7.0.92, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.UnitTesting": {
+              "target": "Package",
+              "version": "[11.0.50727.1, )"
             },
             "Microsoft.WindowsAppSDK": {
               "target": "Package",
