@@ -10,23 +10,16 @@ namespace schoolManager.Services
 {
     public class AppServices
     {
-        private Dictionary<string, List<string>> data;
-        public List<Activite> listActivite;
-        public List<Enseignant> listEnseignant;
-        public List<Etudiant> listEtudiant;
-        public List<Eval> listEval;
-        public List<Person> listPerson;
-        public List<Appreciation> listAppreciation;
-        public List<Cote> listCote;
-        private string filePath;
+        private static Dictionary<string, List<string>> data;
+        private static string filePath;
         //METHODES PUBLIQUES
-        public AppServices()
+        public static void loadData()
         {
             //constructor : makes the file path and then calls intit
             filePath = "ICI LE FILE PATH PR LE JSON/data_Backup_Of_23-12-13_16:34:08";
-            InitializeData();
+            InitializeData(filePath);
         }
-        public void SaveChanges()
+        public static void SaveChanges()
         {
             //make new data from all lists of objects
             //pack all data
@@ -40,42 +33,15 @@ namespace schoolManager.Services
             Dictionary<string, List<string>> packedData = packAll();
             JsonDataAccess.WriteDictionaryToFile(packedData,JsonDataAccess.GenerateBackupName());
         }
-
-        // NEW OBJECTS METHODS(constructors)
-        public Activite createActivite(string Name,string Code,Enseignant enseignant,int ECTS){
-            Activite activite = new Activite(Name,Code,enseignant,ECTS,listActivite);
-            return activite;
-        }
-        public Appreciation createAppreciation(string appreciationSTR,Activite activite){
-            Appreciation appreciation = new Appreciation(appreciationSTR,activite,listAppreciation,listEval);
-            return appreciation;
-        }
-        public Cote createCote(int note,Activite activite){
-            Cote cote = new Cote(note,activite,listCote,listEval);
-            return cote;
-        }
-        public Enseignant createEnseignant(int salaire,string firstName,string lastName){
-            Enseignant enseignant = new Enseignant(salaire,firstName,lastName,listEnseignant,listPerson);
-            return enseignant;
-        }
-        public Etudiant createEtudiant(string firstName,string lastName,List<Eval> evaluations){
-            Etudiant etudiant = new Etudiant(firstName,lastName,evaluations,listEtudiant,listPerson);
-            return etudiant;
-        }
         //METHODES PRIVEES
-        private void InitializeData()
+        private static void InitializeData(string filePath)
         {
             //gets data from json file, creates all lists then unpacks the dictionary to create instances of objects
             data = JsonDataAccess.ReadDictionaryFromFile(filePath);
-            listActivite = new List<Activite>{};
-            listEnseignant = new List<Enseignant>{};
-            listEtudiant = new List<Etudiant>{};
-            listEval = new List<Eval>{};
-            listPerson = new List<Person>{};
             unpackAll(data);
         }
         //packer and unpackers
-        private Dictionary<string, List<string>> packAll()
+        private static Dictionary<string, List<string>> packAll()
         {
             List<string> dicoKeys = new List<string>{"Etudiant","Enseignant","Cote","Appreciation","Activite"};
             Dictionary<string, List<string>> output = new Dictionary<string, List<string>>{};
@@ -133,14 +99,14 @@ namespace schoolManager.Services
             }
             return output;
         } 
-        private string pack(object item)
+        private static string pack(object item)
         {
             //take any object and make it into a dictionary
             //using the newton soft soft lib
             string output = JsonConvert.SerializeObject(item);
             return output;
         }
-        private void unpackAll(Dictionary<string, List<string>> data)
+        private static void unpackAll(Dictionary<string, List<string>> data)
         {
             //call all unpackers with a switch case and consequently generate alll objects
             // unpacking order MUST BE :  Enseignant => Activite => Evaluations (cotes,appreciations packed into a list) => Etudiants
@@ -235,34 +201,34 @@ namespace schoolManager.Services
    
         }
         
-        private Activite unpackActivite(string packedItem)
+        private static Activite unpackActivite(string packedItem)
         {
             //unpack object
             Activite activite = JsonConvert.DeserializeObject<Activite>(packedItem);
             return activite;
         }
-        private Appreciation unpackAppreciation(string packedItem)
+        private static Appreciation unpackAppreciation(string packedItem)
         {
             //unpack object
 
             Appreciation appreciation = JsonConvert.DeserializeObject<Appreciation>(packedItem);
             return appreciation;
         }
-        private Cote unpackCote(string packedItem)
+        private static Cote unpackCote(string packedItem)
         {
             //unpack object
 
             Cote cote = JsonConvert.DeserializeObject<Cote>(packedItem);
             return cote;
         }
-        private Enseignant unpackEnseignant(string packedItem)
+        private static Enseignant unpackEnseignant(string packedItem)
         {
             //unpack object
 
             Enseignant enseignant = JsonConvert.DeserializeObject<Enseignant>(packedItem);
             return enseignant;
         }
-        private Etudiant unpackEtudiant(string packedItem)
+        private static Etudiant unpackEtudiant(string packedItem)
         {
             //unpack object
 
