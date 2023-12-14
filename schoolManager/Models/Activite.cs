@@ -6,16 +6,17 @@ public class Activite
     public string Name;
     public string Code;
     public Enseignant enseignant;
-    public List<Activite> listActivite;
-    public Activite(string Name,string Code,Enseignant enseignant,int ECTS,List<Activite> listActivite)
+    private static List<Activite> listActivite;
+    public Activite(string Name,string Code,Enseignant enseignant,int ECTS)
     {
         this.Name = Name;
         this.Code = Code;
         this.enseignant = enseignant;
         this.ECTS = ECTS;
-        this.listActivite = listActivite;
-        this.listActivite.Add(this);
+        listActivite.Add(this);
     }
-    
-
+    public static List<Activite> getListActivite()
+    {
+        return listActivite;
+    }
 }

@@ -3,11 +3,11 @@
 public class Cote : Eval
 {
     private int note;
-    public Cote(int note,Activite activite,List<Cote> listCote,List<Eval> listEval): base(activite,listEval)
+    private static List<Cote> listCote;
+    public Cote(int note,Activite activite): base(activite)
     {
         this.note = note;
-        this.listCote = listCote;
-        this.listCote.Add(this);
+        listCote.Add(this);
 
     }
     public override int Note()
@@ -18,5 +18,10 @@ public class Cote : Eval
     {
         this.note = note;
     }
+    public static List<Cote> getListCote()
+    {
+        return listCote;
+    }
+    
 
 }

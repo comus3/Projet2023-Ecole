@@ -3,15 +3,17 @@
 public abstract class Eval
 {
     public Activite activite;
-    public List<Eval> listEval;
+    private static List<Eval> listEval;
 
-    public Eval(Activite activite,List<Eval> listEval)
+    public Eval(Activite activite)
     {
         this.activite = activite;
-        this.listEval = listEval;
-        this.listEval.Add(this);
+        listEval.Add(this);
     }
     public abstract int Note();
-    
+    public static List<Eval> getListEval()
+    {
+        return listEval;
+    }
 
 }

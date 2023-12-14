@@ -2,15 +2,14 @@
 
 public class Etudiant : Person
 {
-    List<Eval> evaluations;
-    public List<Etudiant> listEtudiant;
+    public List<Eval> evaluations;
+    private static List<Etudiant> listEtudiant;
 
-    public Etudiant(string firstName,string lastName,List<Eval> evaluations,List<Etudiant> listEtudiant,List<Person> listPerson) :
-    base(firstName,lastName,listPerson)
+    public Etudiant(string firstName,string lastName,List<Eval> evaluations) :
+    base(firstName,lastName)
     {
         this.evaluations = evaluations;
-        this.listEtudiant = listEtudiant;
-        this.listEtudiant.Add(this);
+        listEtudiant.Add(this);
     }
     public void Add(Eval eval)
     {
@@ -38,5 +37,9 @@ public class Etudiant : Person
         }
         output += string.Format("Pour une fabuleuse moyenne de {0}. Bravo {1}!",Average(),displayName());
         return output;
+    }
+    public static List<Etudiant> getListEtudiant()
+    {
+        return listEtudiant;
     }
 }
