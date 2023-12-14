@@ -9,7 +9,8 @@ public class Enseignant : Person
     base(firstName,lastName,listPerson)
     {
         this.salaire = salaire;
-        listEnseignant.Add(this);
+        this.listEnseignant = listEnseignant;
+        this.listEnseignant.Add(this);
     }
     public void Raise(int amt)
     {

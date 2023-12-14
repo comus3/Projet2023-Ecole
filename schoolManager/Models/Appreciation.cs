@@ -7,7 +7,8 @@ public class Appreciation : Eval
     base(activite,listEval)
     {
         this.appreciation = appreciation;
-        listAppreciation.Add(this);
+        this.listAppreciation = listAppreciation;
+        this.listAppreciation.Add(this);
     }
     public override int Note()
     {

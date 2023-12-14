@@ -10,7 +10,8 @@ public class Person
     {
         this.firstName = firstName;
         this.lastName = lastName;
-        listPerson.Add(this);
+        this.listPerson = listPerson;
+        this.listPerson.Add(this);
     }
     public string displayName()
     {
