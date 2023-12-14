@@ -3,12 +3,12 @@
 public class Appreciation : Eval
 {
     private string appreciation;
-    public Appreciation(string appreciation,Activite activite,List<Appreciation> listAppreciation,List<Eval> listEval):
-    base(activite,listEval)
+    public static List<Appreciation> listAppreciation;
+    public Appreciation(string appreciation,Activite activite):
+    base(activite)
     {
         this.appreciation = appreciation;
-        this.listAppreciation = listAppreciation;
-        this.listAppreciation.Add(this);
+        listAppreciation.Add(this);
     }
     public override int Note()
     {
