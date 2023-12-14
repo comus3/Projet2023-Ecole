@@ -197,6 +197,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -2132,6 +2145,19 @@
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -4073,6 +4099,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -6008,6 +6047,19 @@
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -7949,6 +8001,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -9884,6 +9949,19 @@
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -11825,6 +11903,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -13763,6 +13854,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -15688,6 +15792,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -15882,6 +15999,19 @@
         "runtime": {
           "lib/net7.0-ios16.1/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -16082,6 +16212,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -16276,6 +16419,19 @@
         "runtime": {
           "lib/net7.0-ios16.1/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -16476,6 +16632,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -16670,6 +16839,19 @@
         "runtime": {
           "lib/net7.0-ios16.1/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -16870,6 +17052,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -17064,6 +17259,19 @@
         "runtime": {
           "lib/net7.0-ios16.1/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -17264,6 +17472,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -17458,6 +17679,19 @@
         "runtime": {
           "lib/net7.0-maccatalyst16.1/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -17658,6 +17892,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -17852,6 +18099,19 @@
         "runtime": {
           "lib/net7.0-maccatalyst16.1/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -18052,6 +18312,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -18246,6 +18519,19 @@
         "runtime": {
           "lib/net7.0-maccatalyst16.1/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -18446,6 +18732,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -18640,6 +18939,19 @@
         "runtime": {
           "lib/net7.0-maccatalyst16.1/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -18885,6 +19197,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -19210,6 +19535,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
         "type": "package",
         "build": {
@@ -19515,6 +19853,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -19826,6 +20177,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
         "type": "package",
         "build": {
@@ -20131,6 +20495,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -20442,6 +20819,19 @@
           }
         }
       },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
         "type": "package",
         "build": {
@@ -20747,6 +21137,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -21058,6 +21461,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -21557,6 +21973,24 @@
         "lib/net7.0-windows10.0.20348/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.pdb",
         "microsoft.maui.graphics.win2d.winui.desktop.7.0.92.nupkg.sha512",
         "microsoft.maui.graphics.win2d.winui.desktop.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.UnitTesting/11.0.50727.1": {
+      "sha512": "DoqQ6Zl7GcytRa1isWv20MyV1znFRDje6k/y3edbew3Qx/Z1r5Cf6rBktD7lGxN97d2VVC5RzdFHw+dci9lsMw==",
+      "type": "package",
+      "path": "microsoft.visualstudio.unittesting/11.0.50727.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-LICENSE.txt",
+        "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll",
+        "lib/net45/Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml",
+        "microsoft.visualstudio.unittesting.11.0.50727.1.nupkg.sha512",
+        "microsoft.visualstudio.unittesting.nuspec",
+        "tools/net45/MSTest.exe",
+        "tools/net45/MSTest.exe.config"
       ]
     },
     "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
@@ -24428,6 +24862,7 @@
       "Microsoft.Extensions.Logging.Abstractions >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.92",
+      "Microsoft.VisualStudio.UnitTesting >= 11.0.50727.1",
       "Newtonsoft.Json >= 13.0.3",
       "Xamarin.Android.Glide >= 4.13.2.2",
       "Xamarin.AndroidX.Browser >= 1.4.0.3",
@@ -24448,6 +24883,7 @@
       "Microsoft.Extensions.Logging.Abstractions >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.92",
+      "Microsoft.VisualStudio.UnitTesting >= 11.0.50727.1",
       "Newtonsoft.Json >= 13.0.3"
     ],
     "net7.0-maccatalyst16.1": [
@@ -24457,6 +24893,7 @@
       "Microsoft.Extensions.Logging.Abstractions >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.92",
+      "Microsoft.VisualStudio.UnitTesting >= 11.0.50727.1",
       "Newtonsoft.Json >= 13.0.3"
     ],
     "net7.0-windows10.0.19041": [
@@ -24467,6 +24904,7 @@
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.92",
       "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop >= 7.0.92",
+      "Microsoft.VisualStudio.UnitTesting >= 11.0.50727.1",
       "Microsoft.WindowsAppSDK >= 1.2.221209.1",
       "Newtonsoft.Json >= 13.0.3"
     ]
@@ -24553,6 +24991,10 @@
             "target": "Package",
             "version": "[7.0.92, )",
             "autoReferenced": true
+          },
+          "Microsoft.VisualStudio.UnitTesting": {
+            "target": "Package",
+            "version": "[11.0.50727.1, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",
@@ -24676,6 +25118,10 @@
             "version": "[7.0.92, )",
             "autoReferenced": true
           },
+          "Microsoft.VisualStudio.UnitTesting": {
+            "target": "Package",
+            "version": "[11.0.50727.1, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
@@ -24742,6 +25188,10 @@
             "target": "Package",
             "version": "[7.0.92, )",
             "autoReferenced": true
+          },
+          "Microsoft.VisualStudio.UnitTesting": {
+            "target": "Package",
+            "version": "[11.0.50727.1, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",
@@ -24815,6 +25265,10 @@
             "target": "Package",
             "version": "[7.0.92, )",
             "autoReferenced": true
+          },
+          "Microsoft.VisualStudio.UnitTesting": {
+            "target": "Package",
+            "version": "[11.0.50727.1, )"
           },
           "Microsoft.WindowsAppSDK": {
             "target": "Package",
@@ -24898,5 +25352,17 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.VisualStudio.UnitTesting 11.0.50727.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-android33.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.VisualStudio.UnitTesting",
+      "targetGraphs": [
+        "net7.0-android33.0"
+      ]
+    }
+  ]
 }

@@ -6,7 +6,8 @@ public class Cote : Eval
     public Cote(int note,Activite activite,List<Cote> listCote,List<Eval> listEval): base(activite,listEval)
     {
         this.note = note;
-        listCote.Add(this);
+        this.listCote = listCote;
+        this.listCote.Add(this);
 
     }
     public override int Note()

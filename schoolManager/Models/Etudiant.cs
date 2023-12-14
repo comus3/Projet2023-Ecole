@@ -9,7 +9,8 @@ public class Etudiant : Person
     base(firstName,lastName,listPerson)
     {
         this.evaluations = evaluations;
-        listEtudiant.Add(this);
+        this.listEtudiant = listEtudiant;
+        this.listEtudiant.Add(this);
     }
     public void Add(Eval eval)
     {

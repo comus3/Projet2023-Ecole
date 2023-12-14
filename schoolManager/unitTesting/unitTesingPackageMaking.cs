@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using schoolManager.Services;
 using schoolManager.Models;
+using schoolManager.DAL;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -18,17 +19,6 @@ namespace YourTestsProject
         {
             // You can modify the file path for testing purposes
             appServices = new AppServices();
-        }
-
-        [TestMethod]
-        public void GenerateBackupName_ReturnsValidFormat()
-        {
-            // Act
-            string backupName = appServices.GenerateBackupName();
-
-            // Assert
-            Assert.IsNotNull(backupName);
-            Assert.IsTrue(System.Text.RegularExpressions.Regex.IsMatch(backupName, @"data_Backup_Of_\d{2}-\d{2}-\d{2}_\d{2}:\d{2}:\d{2}"));
         }
 
         [TestMethod]

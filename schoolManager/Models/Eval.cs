@@ -8,7 +8,8 @@ public abstract class Eval
     public Eval(Activite activite,List<Eval> listEval)
     {
         this.activite = activite;
-        listEval.Add(this);
+        this.listEval = listEval;
+        this.listEval.Add(this);
     }
     public abstract int Note();
     

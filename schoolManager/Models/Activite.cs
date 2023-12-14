@@ -13,7 +13,8 @@ public class Activite
         this.Code = Code;
         this.enseignant = enseignant;
         this.ECTS = ECTS;
-        listActivite.Add(this);
+        this.listActivite = listActivite;
+        this.listActivite.Add(this);
     }
     
 
