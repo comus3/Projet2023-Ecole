@@ -136,6 +136,7 @@ namespace schoolManager.Services
         private string pack(object item)
         {
             //take any object and make it into a dictionary
+            //using the newton soft soft lib
             string output = JsonConvert.SerializeObject(item);
             return output;
         }
@@ -190,7 +191,7 @@ namespace schoolManager.Services
                 // Iterate through the items in the list
                 foreach (string item in coteList)
                 {
-                    Console.WriteLine($"created {unpackEnseignant(item).ToString()} object");
+                    Console.WriteLine($"created {unpackCote(item).ToString()} object");
                 }
             }
             else
@@ -207,7 +208,7 @@ namespace schoolManager.Services
                 // Iterate through the items in the list
                 foreach (string item in appreciationList)
                 {
-                    Console.WriteLine($"created {unpackEnseignant(item).ToString()} object");
+                    Console.WriteLine($"created {unpackAppreciation(item).ToString()} object");
                 }
             }
             else
