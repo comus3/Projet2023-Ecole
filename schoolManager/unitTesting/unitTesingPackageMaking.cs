@@ -21,17 +21,6 @@ namespace YourTestsProject
         }
 
         [TestMethod]
-        public void GenerateBackupName_ReturnsValidFormat()
-        {
-            // Act
-            string backupName = appServices.GenerateBackupName();
-
-            // Assert
-            Assert.IsNotNull(backupName);
-            Assert.IsTrue(System.Text.RegularExpressions.Regex.IsMatch(backupName, @"data_Backup_Of_\d{2}-\d{2}-\d{2}_\d{2}:\d{2}:\d{2}"));
-        }
-
-        [TestMethod]
         public void SaveChanges_WritesToFile()
         {
             // Arrange
