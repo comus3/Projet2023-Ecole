@@ -1,9 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "y6fjqYWH+1gQ+KPYlE4lgU5HH8925vq4Tg1uiK5VU9Y37v5T508ucAe3xszFO9xD+dU2CvnFQ3KPWTuatWdS4g==",
+=======
+  "dgSpecHash": "fgJB6OFQ4S6gOSvlLCk1HZqmNpvR9elI0W7nKkAlmUb1hzryKiXE16jj1JqjE4FzJgfi4sBIwqAXGfxvY4WeOw==",
+>>>>>>> 00b5652861caab867296c3fd96205079660c2221
   "success": true,
-  "projectFilePath": "C:\\Users\\comep\\OneDrive\\Documents\\ECAM\\2023_2024\\Q1\\Csharp\\PROJET\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
+  "projectFilePath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
   "expectedPackageFiles": [
+<<<<<<< HEAD
     "C:\\Users\\comep\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\comep\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\comep\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
@@ -106,6 +111,27 @@
     "C:\\Users\\comep\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.11\\microsoft.netcore.app.runtime.win-x64.7.0.11.nupkg.sha512",
     "C:\\Users\\comep\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.29\\microsoft.windows.sdk.net.ref.10.0.19041.29.nupkg.sha512",
     "C:\\Users\\comep\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.11\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.11.nupkg.sha512"
+=======
+    "C:\\Users\\Cath\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.extensions.logging.debug\\7.0.0\\microsoft.extensions.logging.debug.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.graphics.win2d\\1.0.5.1\\microsoft.graphics.win2d.1.0.5.1.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.graphics\\7.0.92\\microsoft.maui.graphics.7.0.92.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\7.0.92\\microsoft.maui.graphics.win2d.winui.desktop.7.0.92.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.11\\microsoft.netcore.app.runtime.win-x64.7.0.11.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.11\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.11.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.11\\microsoft.aspnetcore.app.runtime.win-x64.7.0.11.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.29\\microsoft.windows.sdk.net.ref.10.0.19041.29.nupkg.sha512"
+>>>>>>> 00b5652861caab867296c3fd96205079660c2221
   ],
   "logs": [
     {

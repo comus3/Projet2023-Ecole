@@ -1,6 +1,7 @@
 {
   "version": 3,
   "targets": {
+<<<<<<< HEAD
     "net7.0-android33.0": {
       "GoogleGson/2.9.1.1": {
         "type": "package",
@@ -18969,7 +18970,25 @@
         }
       }
     },
+=======
+>>>>>>> 00b5652861caab867296c3fd96205079660c2221
     "net7.0-windows10.0.19041": {
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -19318,6 +19337,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "net7.0-windows10.0.19041/android-arm": {
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
@@ -21244,7 +21264,25 @@
         }
       }
     },
+=======
+>>>>>>> 00b5652861caab867296c3fd96205079660c2221
     "net7.0-windows10.0.19041/win10-x64": {
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -21573,22 +21611,35 @@
     }
   },
   "libraries": {
-    "GoogleGson/2.9.1.1": {
-      "sha512": "OreKEL2Yx2u8YhRqv0e+j45cEzoe+fyMEzGN+M/vfBDPsIXQcA6lGdHXO07bTrGn6NNwxY67dyIfbyXx3A7cDA==",
+    "CommunityToolkit.Mvvm/8.2.2": {
+      "sha512": "r0g0k9tGYdrnz8R7T3x5UiokDffeevzK/2P/9SBL6fqLgN8B157MIi/bVUWI1KAz6ZorZrK9AdABCWUeXZZsvA==",
       "type": "package",
-      "path": "googlegson/2.9.1.1",
+      "path": "communitytoolkit.mvvm/8.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "License.md",
-        "THIRD-PARTY-NOTICES.txt",
-        "googlegson.2.9.1.1.nupkg.sha512",
-        "googlegson.nuspec",
-        "lib/monoandroid12.0/GoogleGson.dll",
-        "lib/monoandroid12.0/GoogleGson.xml",
-        "lib/net6.0-android31.0/GoogleGson.aar",
-        "lib/net6.0-android31.0/GoogleGson.dll",
-        "lib/net6.0-android31.0/GoogleGson.xml"
+        "ThirdPartyNotices.txt",
+        "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "analyzers/dotnet/roslyn4.3/cs/CommunityToolkit.Mvvm.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.3/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "build/netstandard2.0/CommunityToolkit.Mvvm.targets",
+        "build/netstandard2.1/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/netstandard2.0/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets",
+        "communitytoolkit.mvvm.8.2.2.nupkg.sha512",
+        "communitytoolkit.mvvm.nuspec",
+        "lib/net6.0/CommunityToolkit.Mvvm.dll",
+        "lib/net6.0/CommunityToolkit.Mvvm.pdb",
+        "lib/net6.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
       ]
     },
     "Microsoft.Extensions.Configuration/7.0.0": {
@@ -22825,6 +22876,7 @@
         "tools/x64/GenXbf.dll",
         "tools/x86/GenXbf.dll"
       ]
+<<<<<<< HEAD
     },
     "Newtonsoft.Json/13.0.3": {
       "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
@@ -24896,7 +24948,13 @@
       "Microsoft.VisualStudio.UnitTesting >= 11.0.50727.1",
       "Newtonsoft.Json >= 13.0.3"
     ],
+=======
+    }
+  },
+  "projectFileDependencyGroups": {
+>>>>>>> 00b5652861caab867296c3fd96205079660c2221
     "net7.0-windows10.0.19041": [
+      "CommunityToolkit.Mvvm >= 8.2.2",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -24910,25 +24968,22 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\comep\\.nuget\\packages\\": {}
+    "C:\\Users\\Cath\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\comep\\OneDrive\\Documents\\ECAM\\2023_2024\\Q1\\Csharp\\PROJET\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
+      "projectUniqueName": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
       "projectName": "schoolManager",
-      "projectPath": "C:\\Users\\comep\\OneDrive\\Documents\\ECAM\\2023_2024\\Q1\\Csharp\\PROJET\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
-      "packagesPath": "C:\\Users\\comep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\comep\\OneDrive\\Documents\\ECAM\\2023_2024\\Q1\\Csharp\\PROJET\\Projet2023-Ecole\\schoolManager\\obj\\",
+      "projectPath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
+      "packagesPath": "C:\\Users\\Cath\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
-        "C:\\Users\\comep\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Cath\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0-android",
-        "net7.0-ios",
-        "net7.0-maccatalyst",
         "net7.0-windows10.0.19041.0"
       ],
       "sources": {
@@ -24936,18 +24991,6 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0-android33.0": {
-          "targetAlias": "net7.0-android",
-          "projectReferences": {}
-        },
-        "net7.0-ios16.1": {
-          "targetAlias": "net7.0-ios",
-          "projectReferences": {}
-        },
-        "net7.0-maccatalyst16.1": {
-          "targetAlias": "net7.0-maccatalyst",
-          "projectReferences": {}
-        },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
           "projectReferences": {}
@@ -24960,6 +25003,7 @@
       }
     },
     "frameworks": {
+<<<<<<< HEAD
       "net7.0-android33.0": {
         "targetAlias": "net7.0-android",
         "dependencies": {
@@ -25229,9 +25273,15 @@
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       },
+=======
+>>>>>>> 00b5652861caab867296c3fd96205079660c2221
       "net7.0-windows10.0.19041": {
         "targetAlias": "net7.0-windows10.0.19041.0",
         "dependencies": {
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.2.2, )"
+          },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
             "version": "[7.0.0, )",
@@ -25330,24 +25380,6 @@
       }
     },
     "runtimes": {
-      "android-arm": {
-        "#import": []
-      },
-      "android-arm64": {
-        "#import": []
-      },
-      "android-x64": {
-        "#import": []
-      },
-      "android-x86": {
-        "#import": []
-      },
-      "iossimulator-x64": {
-        "#import": []
-      },
-      "maccatalyst-x64": {
-        "#import": []
-      },
       "win10-x64": {
         "#import": []
       }
