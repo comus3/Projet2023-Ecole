@@ -3,7 +3,7 @@
 public class Etudiant : Person
 {
     public List<Eval> evaluations;
-    private static List<Etudiant> listEtudiant;
+    private static List<Etudiant> listEtudiant = new List<Etudiant>{};
 
     public Etudiant(string firstName,string lastName,List<Eval> evaluations) :
     base(firstName,lastName)
