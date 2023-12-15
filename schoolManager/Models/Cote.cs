@@ -3,7 +3,7 @@
 public class Cote : Eval
 {
     private int note;
-    private static List<Cote> listCote;
+    private static List<Cote> listCote = new List<Cote>{};
     public Cote(int note,Activite activite): base(activite)
     {
         this.note = note;
