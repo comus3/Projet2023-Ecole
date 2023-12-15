@@ -4,7 +4,7 @@ public class Person
 {
     private readonly string firstName;
     private readonly string lastName;
-    private static List<Person> listPerson;
+    private static List<Person> listPerson = new List<Person>{};
 
     public Person(string firstName,string lastName)
     {
