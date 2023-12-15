@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JL5sLouTnK2LhO857KXxEfKucHtY/pGdz69SoZaPCqVHbAZrL6N3vU0sl5ET3Aazlv6nC/3SJ9QzBwpXifjIPg==",
+  "dgSpecHash": "fgJB6OFQ4S6gOSvlLCk1HZqmNpvR9elI0W7nKkAlmUb1hzryKiXE16jj1JqjE4FzJgfi4sBIwqAXGfxvY4WeOw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
   "expectedPackageFiles": [
@@ -19,10 +19,10 @@
     "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\7.0.92\\microsoft.maui.graphics.win2d.winui.desktop.7.0.92.nupkg.sha512",
     "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
-    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.11\\microsoft.aspnetcore.app.runtime.win-x64.7.0.11.nupkg.sha512",
     "C:\\Users\\Cath\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.11\\microsoft.netcore.app.runtime.win-x64.7.0.11.nupkg.sha512",
-    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.29\\microsoft.windows.sdk.net.ref.10.0.19041.29.nupkg.sha512",
-    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.11\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.11.nupkg.sha512"
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.11\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.11.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.11\\microsoft.aspnetcore.app.runtime.win-x64.7.0.11.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.29\\microsoft.windows.sdk.net.ref.10.0.19041.29.nupkg.sha512"
   ],
   "logs": []
 }

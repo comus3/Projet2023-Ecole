@@ -17,6 +17,12 @@
         Title="About"
         ContentTemplate="{DataTemplate views:AboutPage}"
          />
+    
+
+    <ShellContent
+        Title="FirstPage"
+        ContentTemplate="{DataTemplate views:FirstPage}"
+         />
     </TabBar>
 
 </Shell>
