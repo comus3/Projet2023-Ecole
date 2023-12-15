@@ -4,10 +4,13 @@ public class Person
 {
     private readonly string firstName;
     private readonly string lastName;
+    private static List<Person> listPerson = new List<Person>{};
+
     public Person(string firstName,string lastName)
     {
         this.firstName = firstName;
         this.lastName = lastName;
+        listPerson.Add(this);
     }
     public string displayName()
     {
@@ -24,5 +27,9 @@ public class Person
         get {
             return lastName;
         }
+    }
+    public static List<Person> getListPerson()
+    {
+        return listPerson;
     }
 }

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\schoolManager.csproj.AssemblyReference.cache
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\schoolManager.GeneratedMSBuildEditorConfig.editorconfig
+=======
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\schoolManager.exe
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\schoolManager.deps.json
@@ -542,3 +556,4 @@ C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts infor
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.winmd
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.winmd
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.UI.Xaml.Controls.pri
+>>>>>>> 00b5652861caab867296c3fd96205079660c2221

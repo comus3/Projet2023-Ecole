@@ -1,3 +1,48 @@
+<<<<<<< HEAD
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\mauiimage.inputs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\mauifont.inputs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\mauisplash.inputs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\sp\MauiSplash.storyboard
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\mauisplash.stamp
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@2x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@3x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\splash.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\splash@2x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\splash@3x.png
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\mauiimage.stamp
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\f\MauiInfo.plist
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\mauifont.stamp
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\f\OpenSans-Semibold.ttf
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\actool\_PartialAppManifest.items
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\actool\_BundleResourceWithLogicalName.items
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\actool\_ProcessedImageAssetsPath.items
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\ibtool\_ProcessedInterfaceDefinitionsPath.items
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\coremlc\_PartialAppManifest.items
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\coremlc\_ProcessedCoreMLModelsPath.items
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\_ProcessedBundleResourcesPath.items
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\_ProcessedContentPath.items
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\schoolManager.csproj.AssemblyReference.cache
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\schoolManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\schoolManager.AssemblyInfoInputs.cache
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\schoolManager.AssemblyInfo.cs
+C:\Users\comep\OneDrive\Documents\ECAM\2023_2024\Q1\Csharp\PROJET\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\schoolManager.csproj.CoreCompileInputs.cache
+=======
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\bin\Debug\net7.0-ios\iossimulator-x64\schoolManager.runtimeconfig.json
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\bin\Debug\net7.0-ios\iossimulator-x64\schoolManager.dll
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\bin\Debug\net7.0-ios\iossimulator-x64\schoolManager.pdb
@@ -268,3 +313,4 @@ C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts infor
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\schoolManager.pdb
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\schoolManager.genruntimeconfig.cache
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-ios\iossimulator-x64\ref\schoolManager.dll
+>>>>>>> 00b5652861caab867296c3fd96205079660c2221
