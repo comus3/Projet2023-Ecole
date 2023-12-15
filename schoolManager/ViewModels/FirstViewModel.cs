@@ -1,23 +1,25 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using System.Windows.Input;
-
+using schoolManager.Models;
 namespace schoolManager.ViewModels;
 
-internal class FirstViewModel
-{
-    public string Title => AppInfo.Name; 
-    public string Version => AppInfo.VersionString;
-    public string MoreInfoUrl => "https://aka.ms/maui";
-    public string Message => "This app is written in XAML and C# with .NET MAUI.";
-    public ICommand ShowMoreInfoCommand { get; }
-
-    public FirstViewModel()
+public class FirstViewModel : INotifyPropertyChanged
     {
-        ShowMoreInfoCommand = new AsyncRelayCommand(ShowMoreInfo);
-    }
+        public event PropertyChangedEventHandler PropertyChanged;
 
-    async Task ShowMoreInfo() =>
-        await Launcher.Default.OpenAsync(MoreInfoUrl);
+        public Etudiant Baptiste { get; set; }
+
+        public FirstViewModel()
+        {
+            Baptiste = new Etudiant("Batou", "Chouchou", new List<Evaluation>());
+        }
+    // public string Title1 => "Affichage";
+    // //    Enseignant.getListEnseignant();
+    // // Enseignant.getListEnseignant(){0}.attrigbut1
+
+    
+    // public string Message => "Liste des Enseignants";
+    // public ICommand ShowMoreInfoCommand { get; }
+    
 }
-

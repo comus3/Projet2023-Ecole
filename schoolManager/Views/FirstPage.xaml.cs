@@ -1,9 +1,14 @@
-namespace schoolManager.Views;
+using Xamarin.Forms.Xaml;
 
-public partial class FirstPage : ContentPage
+namespace schoolManager.Views
 {
-    public FirstPage()
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class FirstPage : ContentPage
     {
-        InitializeComponent();
+        public FirstPage()
+        {
+            InitializeComponent();
+            BindingContext = new FirstViewModel();
+        }
     }
 }
