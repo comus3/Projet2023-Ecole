@@ -1,35 +1,36 @@
-﻿namespace schoolManager.Models;
-
-public class Person
+﻿namespace schoolManager.Models
 {
-    private readonly string firstName;
-    private readonly string lastName;
-    private static List<Person> listPerson = new List<Person>{};
+    public class Person
+    {
+        private readonly string firstName;
+        private readonly string lastName;
+        private static List<Person> listPerson = new List<Person>();
 
-    public Person(string firstName,string lastName)
-    {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        listPerson.Add(this);
-    }
-    public string displayName()
-    {
-        return firstName + " " + lastName;
-    }
-    public string FirstName
-    {
-        get {
-            return firstName;
+        public Person(string firstName, string lastName)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            listPerson.Add(this);
         }
-    }
-    public string LasttName
-    {
-        get {
-            return lastName;
+
+        public string DisplayName()
+        {
+            return firstName + " " + lastName;
         }
-    }
-    public static List<Person> getListPerson()
-    {
-        return listPerson;
+
+        public string FirstName
+        {
+            get { return firstName; }
+        }
+
+        public string LastName
+        {
+            get { return lastName; }
+        }
+
+        public static List<Person> ListPerson
+        {
+            get { return listPerson; }
+        }
     }
 }
