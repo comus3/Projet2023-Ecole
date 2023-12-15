@@ -51,7 +51,7 @@ namespace schoolManager.Services
                 {
                     case "Etudiant":
                         List<string> packedObjectListEtudiant = new List<string>{};
-                        foreach (object packableItem in Etudiant.getListEtudiant())
+                        foreach (object packableItem in Etudiant.ListEtudiant)
                         {
                             packedObjectListEtudiant.Add(pack(packableItem));
                         }
@@ -60,7 +60,7 @@ namespace schoolManager.Services
 
                     case "Enseignant":
                         List<string> packedObjectListEnseignant = new List<string>{};
-                        foreach (object packableItem in Enseignant.getListEnseignant())
+                        foreach (object packableItem in Enseignant.ListEnseignant)
                         {
                             packedObjectListEnseignant.Add(pack(packableItem));
                         }
@@ -69,7 +69,7 @@ namespace schoolManager.Services
 
                     case "Cote":
                         List<string> packedObjectListCote = new List<string>{};
-                        foreach (object packableItem in Cote.getListCote())
+                        foreach (object packableItem in Cote.ListCote)
                         {
                             packedObjectListCote.Add(pack(packableItem));
                         }
@@ -77,7 +77,7 @@ namespace schoolManager.Services
                         break;
                     case "Appreciation":
                         List<string> packedObjectListAppreciation = new List<string>{};
-                        foreach (object packableItem in Appreciation.getListAppreciation())
+                        foreach (object packableItem in Appreciation.ListAppreciation)
                         {
                             packedObjectListAppreciation.Add(pack(packableItem));
                         }
@@ -85,7 +85,7 @@ namespace schoolManager.Services
                         break;
                     case "Activite":
                         List<string> packedObjectListActivite = new List<string>{};
-                        foreach (object packableItem in Activite.getListActivite())
+                        foreach (object packableItem in Activite.ListActivite)
                         {
                             packedObjectListActivite.Add(pack(packableItem));
                         }
