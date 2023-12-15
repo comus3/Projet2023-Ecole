@@ -16,4 +16,8 @@ public partial class FirstPage : ContentPage
 	{
         Navigation.PushAsync(new MainPage());  
 	}
+    private void Button3_Clicked(object sender, EventArgs e)
+	{
+        Navigation.PushAsync(new MainPage());  
+	}
 }
