@@ -2,8 +2,17 @@ namespace schoolManager.Views;
 
 public partial class AboutPage : ContentPage
 {
-    public AboutPage()
+	public AboutPage()
+	{
+		InitializeComponent();
+	}
+
+    private async void LearnMore_Clicked(object sender, EventArgs e)
     {
-        InitializeComponent();
+        if (BindingContext is Models.AboutPage about)
+    {
+        // Navigate to the specified URL in the system browser.
+        await Launcher.Default.OpenAsync(about.MoreInfoUrl);
     }
+}
 }
