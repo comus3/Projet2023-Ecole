@@ -3,7 +3,7 @@
 public abstract class Eval
 {
     public Activite activite;
-    private static List<Eval> listEval;
+    private static List<Eval> listEval = new List<Eval>{};
 
     public Eval(Activite activite)
     {
