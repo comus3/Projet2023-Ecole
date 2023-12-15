@@ -3,7 +3,7 @@
 public class Appreciation : Eval
 {
     private string appreciation;
-    private static List<Appreciation> listAppreciation;
+    private static List<Appreciation> listAppreciation = new List<Appreciation>{};
     public Appreciation(string appreciation,Activite activite):
     base(activite)
     {
