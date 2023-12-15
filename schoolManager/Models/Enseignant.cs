@@ -3,7 +3,7 @@
 public class Enseignant : Person
 {
     private int salaire;
-    private static List<Enseignant> listEnseignant;
+    private static List<Enseignant> listEnseignant = new List<Enseignant>{};
 
     public Enseignant(int salaire,string firstName,string lastName) :
     base(firstName,lastName)
