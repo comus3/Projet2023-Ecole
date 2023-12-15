@@ -3,10 +3,13 @@
 public class Enseignant : Person
 {
     private int salaire;
+    private static List<Enseignant> listEnseignant = new List<Enseignant>{};
+
     public Enseignant(int salaire,string firstName,string lastName) :
     base(firstName,lastName)
     {
         this.salaire = salaire;
+        listEnseignant.Add(this);
     }
     public void Raise(int amt)
     {
@@ -15,5 +18,9 @@ public class Enseignant : Person
     public string ReturnSalary()
     {
         return salaire.ToString();
+    }
+    public static List<Enseignant> getListEnseignant()
+    {
+        return listEnseignant;
     }
 }
