@@ -35,3 +35,6 @@ C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts infor
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\schoolManager.AssemblyInfoInputs.cache
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\schoolManager.AssemblyInfo.cs
 C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\schoolManager.csproj.CoreCompileInputs.cache
+C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\schoolManager.dll
+C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\refint\schoolManager.dll
+C:\Users\Cath\Desktop\Ecam\3BE\Software engineering 1\Laboratoire concepts informatiques\Projet\Projet2023-Ecole\schoolManager\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\schoolManager.pdb
