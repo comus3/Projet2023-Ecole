@@ -19,10 +19,7 @@
          />
     
 
-    <ShellContent
-        Title="Liste Enseignants"
-        ContentTemplate="{DataTemplate views:ListEns}"
-         />
+    
     </TabBar>
 
 </Shell>
