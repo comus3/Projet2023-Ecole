@@ -1,4 +1,6 @@
-﻿namespace schoolManager;
+﻿using schoolManager.Views;
+
+namespace schoolManager;
 
 public partial class MainPage : ContentPage
 {
@@ -36,7 +38,7 @@ public partial class MainPage : ContentPage
 
 	private void Button_ListEns(object sender, EventArgs e)
 	{
-
+		Navigation.PushAsync(new ListEns());
 	}
 	private void Button_ListAct(object sender, EventArgs e)
 	{

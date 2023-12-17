@@ -6,6 +6,7 @@
              Title="Liste des Enseignants">    
     <ContentPage.Content>
         <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-            </StackLayout>
+        <Label FontSize="22" FontAttributes="Bold" Text="{Binding Ens}" VerticalOptions="End" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
