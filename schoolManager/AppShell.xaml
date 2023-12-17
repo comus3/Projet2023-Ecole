@@ -20,8 +20,8 @@
     
 
     <ShellContent
-        Title="FirstPage"
-        ContentTemplate="{DataTemplate views:FirstPage}"
+        Title="Liste Enseignants"
+        ContentTemplate="{DataTemplate views:ListEns}"
          />
     </TabBar>
 

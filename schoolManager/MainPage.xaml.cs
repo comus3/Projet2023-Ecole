@@ -29,8 +29,21 @@ public partial class MainPage : ContentPage
 	{
         Navigation.PushAsync(new MainPage());  
 	}
-    private void Button_AddStu(object sender, EventArgs e)
+    private void Button_AddStud(object sender, EventArgs e)
 	{
         Navigation.PushAsync(new MainPage());  
+	}
+
+	private void Button_ListEns(object sender, EventArgs e)
+	{
+
+	}
+	private void Button_ListAct(object sender, EventArgs e)
+	{
+
+	}
+	private void Button_ListStud(object sender, EventArgs e)
+	{
+
 	}
 }
