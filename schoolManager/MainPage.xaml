@@ -5,11 +5,16 @@
              Title="Home Page"> 
 
     <ScrollView>
-        <VerticalStackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Ajouter" FontSize="20" HorizontalOptions="Center" Margin="0,10,0,5"/>
             <Button x:Name="redirectEns" Text="Ajouter un Enseignant" SemanticProperties.Hint="Redirect on Ens page" Clicked="Button1_Clicked" />
             <Button x:Name="redirectAct" Text="Ajouter une Activité" SemanticProperties.Hint="Redirect on Act page" Clicked="Button2_Clicked" />
-            <Button x:Name="redirectStud" Text="Ajouter un Éleve" SemanticProperties.Hint="Redirect on Stud page" Clicked="Button3_Clicked" />
-        </VerticalStackLayout>
+            <Button x:Name="redirectStud" Text="Ajouter un Élève" SemanticProperties.Hint="Redirect on Stud page" Clicked="Button3_Clicked" />
+            <Label Text="Afficher" FontSize="20" HorizontalOptions="Center" Margin="0,10,0,5"/>
+            <Button Text="Liste des Enseignants"/>
+            <Button Text="Liste des Activités"/>
+            <Button Text="Liste des Élèves"/>
+        </StackLayout>
     </ScrollView>
 
 </ContentPage>
