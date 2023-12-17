@@ -6,12 +6,12 @@
 
     <ScrollView>
         <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-            <Label Text="Ajouter" FontSize="20" HorizontalOptions="Center" Margin="0,10,0,5"/>
+            <Label Text="Ajouter" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,10,0,5"/>
             <Button x:Name="redirectEns" Text="Ajouter un Enseignant" SemanticProperties.Hint="Redirect on Ens page" Clicked="Button_AddEns" />
             <Button x:Name="redirectAct" Text="Ajouter une Activité" SemanticProperties.Hint="Redirect on Act page" Clicked="Button_AddAct" />
             <Button x:Name="redirectStud" Text="Ajouter un Élève" SemanticProperties.Hint="Redirect on Stud page" Clicked="Button_AddStud" />
             
-            <Label Text="Afficher" FontSize="20" HorizontalOptions="Center" Margin="0,10,0,5"/>
+            <Label Text="Afficher" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,10,0,5"/>
             <Button Text="Liste des Enseignants" Clicked="Button_ListEns"/>
             <Button Text="Liste des Activités" Clicked="Button_ListAct"/>
             <Button Text="Liste des Élèves" Clicked="Button_ListStud"/>
