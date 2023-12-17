@@ -16,15 +16,16 @@ namespace schoolManager.DAL
     {
         public static string GenerateBackupName()
         {
-            // Create a string with the format "data_Backup_Of_23-12-13_16:34:08"
+            // Create a string with the format "data_Backup_Of_23-12-13_16_34_08"
             string prefix = "data_Backup_Of_";
-            string timestamp = DateTime.Now.ToString("yy-MM-dd_HH:mm:ss");
+            string timestamp = DateTime.Now.ToString("yy-MM-dd_HH_mm_ss");
             
             // Combine all parts to form the final name
             string backupName = $"{prefix}{timestamp}";
-
+        
             return backupName;
         }
+
         public static Dictionary<string, List<string>> ReadDictionaryFromFile(string filePath)
         {
             Dictionary<string, List<string>> resultDictionary = new Dictionary<string, List<string>>();
