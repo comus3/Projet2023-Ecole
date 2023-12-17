@@ -42,7 +42,7 @@ public partial class MainPage : ContentPage
 	}
 	private void Button_ListAct(object sender, EventArgs e)
 	{
-
+		Navigation.PushAsync(new ListAct());
 	}
 	private void Button_ListStud(object sender, EventArgs e)
 	{
