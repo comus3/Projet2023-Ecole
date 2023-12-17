@@ -57,3 +57,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = schoolManager.Views.ListEns.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ListEns.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ListEns.xaml
+
+[C:/Users/Cath/Desktop/Ecam/3BE/Software engineering 1/Laboratoire concepts informatiques/Projet/Projet2023-Ecole/schoolManager/Views/ListStud.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = schoolManager.Views.ListStud.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ListStud.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ListStud.xaml

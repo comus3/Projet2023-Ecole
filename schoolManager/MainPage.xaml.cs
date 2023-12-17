@@ -46,6 +46,6 @@ public partial class MainPage : ContentPage
 	}
 	private void Button_ListStud(object sender, EventArgs e)
 	{
-
+		Navigation.PushAsync(new ListStud());
 	}
 }
