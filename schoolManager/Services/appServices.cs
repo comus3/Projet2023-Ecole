@@ -3,10 +3,10 @@
 //a faire: save ,load ,modfiy(immuable?)
 //
 using Newtonsoft.Json;
-using schoolManager.DAL;
-using schoolManager.Models;
+using tester.DAL;
+using tester.Models;
 
-namespace schoolManager.Services
+namespace tester.Services
 {
     public class AppServices
     {
@@ -16,7 +16,7 @@ namespace schoolManager.Services
         public static void loadData()
         {
             //constructor : makes the file path and then calls intit
-            filePath = "ICI LE FILE PATH PR LE JSON/data_Backup_Of_23-12-13_16:34:08";
+            filePath = "data_Backup_Of_23-12-17_18_29_59";
             InitializeData(filePath);
         }
         public static void SaveChanges()
@@ -31,7 +31,7 @@ namespace schoolManager.Services
             //     { "Cote", new List<string> { "Value31", "Value32", "Value33", "Value34" } }
             // };
             Dictionary<string, List<string>> packedData = packAll();
-            JsonDataAccess.WriteDictionaryToFile(packedData,JsonDataAccess.GenerateBackupName());
+            JsonDataAccess.WriteDictionaryToFile(JsonDataAccess.GenerateBackupName(),packedData);
         }
         //METHODES PRIVEES
         private static void InitializeData(string filePath)
