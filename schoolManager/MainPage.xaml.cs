@@ -21,15 +21,15 @@ public partial class MainPage : ContentPage
 // 		SemanticScreenReader.Announce(CounterBtn.Text);
 // 	}
 // }
-    private void Button1_Clicked(object sender, EventArgs e)
+    private void Button_AddEns(object sender, EventArgs e)
 	{
         Navigation.PushAsync(new MainPage());   
 	}
-    private void Button2_Clicked(object sender, EventArgs e)
+    private void Button_AddAct(object sender, EventArgs e)
 	{
         Navigation.PushAsync(new MainPage());  
 	}
-    private void Button3_Clicked(object sender, EventArgs e)
+    private void Button_AddStu(object sender, EventArgs e)
 	{
         Navigation.PushAsync(new MainPage());  
 	}
