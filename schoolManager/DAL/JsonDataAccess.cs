@@ -10,7 +10,7 @@ using System.IO;
 using System.Text.Json;
 
 
-namespace tester.DAL
+namespace schoolManager.DAL
 {
     public class JsonDataAccess
     {
