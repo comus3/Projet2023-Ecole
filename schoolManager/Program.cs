@@ -17,7 +17,7 @@ namespace schoolManager.Program
             Activite info = new Activite("INFO", "INFO3000", lurk1.Uid, 5);
             Activite elecAnal = new Activite("ELEC ANAL", "ANAL3000", dlh.Uid, 5);
             Activite elecNum = new Activite("ELEC NUM", "NUM3000", dlh.Uid, 3);
-            Activite algo = new Activite("ALGO", "ALGO3000", lurk2.Uid, 4);
+            Activite algo = new Activite("ALGO", "ALGO3000", Guid.Empty.ToString(), 4);
             Activite creativityClass = new Activite("CREATIVITY", "CRTV3000", creativeTeacher.Uid, 5);
 
 
@@ -37,7 +37,6 @@ namespace schoolManager.Program
 
             new Appreciation("B", creativityClass.Uid,ariaStudent.UidStudent);
 
-            // Add more evaluations for Aria
 
             
             Console.WriteLine("objects created!");
@@ -51,9 +50,9 @@ namespace schoolManager.Program
         }
         public static void Main(string[] args)
         {
-            createJson();
-            //AppServices.loadData();
-            //Console.WriteLine("data read");
+            //createJson();
+            AppServices.loadData();
+            Console.WriteLine("data read");
         }
     }
 }

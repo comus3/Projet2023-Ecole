@@ -1,0 +1,28 @@
+Etudiant
+{"UidStudent":"99187e91-5cc8-40c2-8129-299e35821dc4","FirstName":"Batou","LastName":"Chouchou"}
+{"UidStudent":"a529cf99-48f6-4476-9c44-c401449ace6d","FirstName":"Lucas","LastName":"Smith"}
+{"UidStudent":"759b77f6-41c9-4bcf-ac65-2d90de49b63f","FirstName":"Aria","LastName":"Johnson"}
+
+Enseignant
+{"Salaire":10000,"Uid":"4fdb0aed-ba9f-400c-a927-a1553c18634e","FirstName":"Quentin","LastName":"Lurk1"}
+{"Salaire":15000,"Uid":"272a294e-0115-461c-b164-abc7e20874f2","FirstName":"Quentin","LastName":"Delhaye"}
+{"Salaire":12000,"Uid":"c9bd43f7-153b-4b02-8710-367886c7c8b4","FirstName":"Lucas","LastName":"Lurk2"}
+{"Salaire":18000,"Uid":"f17cd288-1de0-4acd-98a4-09e6ad2db0dc","FirstName":"Aria","LastName":"CreativeTeacher"}
+
+Cote
+{"NoteValue":14,"Uid":"d09cc7f2-042c-4eec-bff5-3acf74472b69","UidStudent":"99187e91-5cc8-40c2-8129-299e35821dc4","UidActivite":"661f9d61-697b-45de-bee6-e48dc3335fde"}
+
+Appreciation
+{"AppreciationValue":"TB","Uid":"1f330b27-41d6-4f81-b69e-5199d2605a0b","UidStudent":"99187e91-5cc8-40c2-8129-299e35821dc4","UidActivite":"821da916-55e6-491a-a99e-909f3ce4f05e"}
+{"AppreciationValue":"B","Uid":"e14c95a9-f9c5-4910-a3aa-abc865d97643","UidStudent":"99187e91-5cc8-40c2-8129-299e35821dc4","UidActivite":"8ebe2afd-8199-43c1-9d04-ad7cd0952c5f"}
+{"AppreciationValue":"B","Uid":"9b713387-6330-4717-8d1e-4287a07364cc","UidStudent":"a529cf99-48f6-4476-9c44-c401449ace6d","UidActivite":"66e9540a-9bf2-497a-8fce-88bdc9a63b4c"}
+{"AppreciationValue":"B","Uid":"a847f89a-cd04-49a3-82ce-52cbae183133","UidStudent":"a529cf99-48f6-4476-9c44-c401449ace6d","UidActivite":"bb449b72-6301-4a0c-a484-25b0bd962135"}
+{"AppreciationValue":"B","Uid":"8779f90c-429b-4256-9a82-8f50d805e3a1","UidStudent":"759b77f6-41c9-4bcf-ac65-2d90de49b63f","UidActivite":"bb449b72-6301-4a0c-a484-25b0bd962135"}
+
+Activite
+{"Uid":"821da916-55e6-491a-a99e-909f3ce4f05e","UidTeacher":"4fdb0aed-ba9f-400c-a927-a1553c18634e","Name":"INFO","Code":"INFO3000","Ects":5}
+{"Uid":"8ebe2afd-8199-43c1-9d04-ad7cd0952c5f","UidTeacher":"272a294e-0115-461c-b164-abc7e20874f2","Name":"ELEC ANAL","Code":"ANAL3000","Ects":5}
+{"Uid":"661f9d61-697b-45de-bee6-e48dc3335fde","UidTeacher":"272a294e-0115-461c-b164-abc7e20874f2","Name":"ELEC NUM","Code":"NUM3000","Ects":3}
+{"Uid":"66e9540a-9bf2-497a-8fce-88bdc9a63b4c","UidTeacher":"c9bd43f7-153b-4b02-8710-367886c7c8b4","Name":"ALGO","Code":"ALGO3000","Ects":4}
+{"Uid":"bb449b72-6301-4a0c-a484-25b0bd962135","UidTeacher":"f17cd288-1de0-4acd-98a4-09e6ad2db0dc","Name":"CREATIVITY","Code":"CRTV3000","Ects":5}
+
