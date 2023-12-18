@@ -5,7 +5,7 @@
         private int note;
         private static List<Cote> listCote = new List<Cote>();
 
-        public Cote(int note, Activite activite) : base(activite)
+        public Cote(int note,string uidActivite,string uidStudent, string uid = "uninitiated") : base(uidActivite,uidStudent,uid)
         {
             this.note = note;
             listCote.Add(this);
