@@ -32,10 +32,13 @@
             return result;
         }
 
-        public Activite ActiviteObj
+        public Activite ActiviteObjGet()
         {
-            get { return Activite.findActivite(Uid); }
-            set { UidActivite = value.Uid; }
+            return Activite.findActivite(Uid);
+        }
+        public void ActiviteObjSet(Activite activite)
+        {
+            UidActivite = activite.Uid;
         }
 
         public abstract int Note();
