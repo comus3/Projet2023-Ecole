@@ -1,4 +1,4 @@
-﻿namespace schoolManager.Models
+namespace schoolManager.Models
 {
     public class Etudiant : Person
     {
@@ -49,7 +49,7 @@
         public string UidStudent 
         {
             get{return uidStudent;}
-            set{uidStudent = value}
+            set{uidStudent = value;}
         }
         public static List<Etudiant> ListEtudiant
         {
