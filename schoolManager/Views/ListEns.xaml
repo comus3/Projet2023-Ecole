@@ -7,9 +7,10 @@
     <ContentPage.BindingContext>
         <viewModels:ListEnsVM />
     </ContentPage.BindingContext>
-        <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+    <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
         <Label Text="hueriohvioerho"/>
-        <Label Text="{Binding Ens}" />
+        <Label Text="{Binding Enss}" />
         <Label FontSize="22" FontAttributes="Bold" Text="{Binding Ens}" VerticalOptions="End" />
-        </StackLayout>
+        <Button Text="Retour a la page Home" Clicked="Button_Home"/>
+    </StackLayout>
 </ContentPage>

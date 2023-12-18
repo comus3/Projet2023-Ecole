@@ -6,4 +6,8 @@ public partial class ListAct : ContentPage
     {
         InitializeComponent();
     }
+    private void Button_Home(object sender, EventArgs e)
+	{
+        Navigation.PushAsync(new MainPage());   
+	}
 }

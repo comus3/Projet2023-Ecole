@@ -6,4 +6,8 @@ public partial class ListStud : ContentPage
     {
         InitializeComponent();
     }
+    private void Button_Home(object sender, EventArgs e)
+	{
+        Navigation.PushAsync(new MainPage());   
+	}
 }

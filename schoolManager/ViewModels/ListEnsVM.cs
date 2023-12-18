@@ -9,9 +9,20 @@ namespace schoolManager.ViewModels;
 
 internal class ListEnsVM
 {
-    public string Ens => "enseignants";
+    //public string Ens => "enseignants";
+
+    //public ICommand ShowMoreInfoCommand { get; }
+    public static void Aff(){
+        List<Enseignant> enseignants = Enseignant.ListEnseignant;
+        foreach (Enseignant enseignant in enseignants){
+            int Name = enseignant.Salaire;
+            //string Ens = enseignant.FirstName;
+        };
+    }
     
-    //public string enseignants => Enseignant.ListEnseignant;
+
+//    (Batou chouchou.Uid)
+
     //public string ens => Enseignant.getListEnseignant;
 
 
