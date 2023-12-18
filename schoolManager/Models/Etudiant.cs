@@ -23,7 +23,7 @@
 
             foreach (Eval eval in Eval.findStudentEvals(UidStudent))
             {
-                int ECTS = eval.ActiviteObj.Ects;
+                int ECTS = eval.ActiviteObjGet().Ects;
                 numOfEval += 1;
                 sumOfValues += ECTS * eval.Note();
                 sumOfECTS += ECTS;
@@ -39,7 +39,7 @@
             foreach (Eval eval in Eval.findStudentEvals(UidStudent))
             {
                 output += string.Format("Pour le cours de {0}, vous avez une note de {1}. {2} Crédits",
-                    eval.ActiviteObj.Name, eval.Note(), eval.ActiviteObj.Ects);
+                    eval.ActiviteObjGet().Name, eval.Note(), eval.ActiviteObjGet().Ects);
             }
 
             output += string.Format("Pour une fabuleuse moyenne de {0}. Bravo {1}!", Average(), DisplayName());
