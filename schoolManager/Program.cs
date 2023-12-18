@@ -53,6 +53,17 @@ namespace schoolManager.Program
             //createJson();
             AppServices.loadData();
             Console.WriteLine("data read");
+
+
+            foreach(Etudiant etudiant in Etudiant.ListEtudiant)
+            {   
+                Console.WriteLine(etudiant.FirstName);
+                Console.WriteLine(etudiant.LastName);
+                foreach(Eval eval in Eval.findStudentEvals(etudiant.UidStudent))
+                {
+                    Console.WriteLine(Activite.findActivite(eval.UidActivite).Name);
+                }
+            }
         }
     }
 }
