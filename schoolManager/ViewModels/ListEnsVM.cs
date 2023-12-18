@@ -4,18 +4,19 @@ using System.Windows.Input;
 using schoolManager.Models;
 namespace schoolManager.ViewModels;
 
-using System;
-using System.Collections.Generic;
+//using System.Collections.Generic;
+
 
 internal class ListEnsVM
 {
-    
-    //Enseignant.ListEnseignant;
-
     public string Ens => "enseignants";
+    
+    public string enseignants => Enseignant.ListEnseignant;
+    public string ens => Enseignant.getListEnseignant;
+
     //Enseignant.ListEnseignant[getListEnseignant];
 
     // Enseignant.getListEnseignant(){0}.attrigbut1
-    List<Enseignant> enseignants = Enseignant.ListEnseignant;
+    //List<Enseignant> enseignants = Enseignant.ListEnseignant;
     
 }

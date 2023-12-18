@@ -4,9 +4,10 @@
              xmlns:viewModels="clr-namespace:schoolManager.ViewModels"
              x:Class="schoolManager.Views.ListAct"
              Title="Liste des Activités">    
-    <ContentPage.Content>
+    <ContentPage.BindingContext>
+        <viewModels:ListActVM />
+    </ContentPage.BindingContext>
         <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
         <Label FontSize="22" FontAttributes="Bold" Text="{Binding Act}" VerticalOptions="End" />
         </StackLayout>
-    </ContentPage.Content>
 </ContentPage>
