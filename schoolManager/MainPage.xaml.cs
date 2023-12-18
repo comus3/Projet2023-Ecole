@@ -25,15 +25,15 @@ public partial class MainPage : ContentPage
 // }
     private void Button_AddEns(object sender, EventArgs e)
 	{
-        Navigation.PushAsync(new MainPage());   
+        Navigation.PushAsync(new AddEns());   
 	}
     private void Button_AddAct(object sender, EventArgs e)
 	{
-        Navigation.PushAsync(new MainPage());  
+        Navigation.PushAsync(new AddAct());  
 	}
     private void Button_AddStud(object sender, EventArgs e)
 	{
-        Navigation.PushAsync(new MainPage());  
+        Navigation.PushAsync(new AddStud());  
 	}
 
 	private void Button_ListEns(object sender, EventArgs e)
