@@ -16,60 +16,94 @@ namespace schoolManager.DAL
     {
         public static string GenerateBackupName()
         {
-            // Create a string with the format "data_Backup_Of_23-12-13_16:34:08"
+            // Create a string with the format "data_Backup_Of_23-12-13_16_34_08"
             string prefix = "data_Backup_Of_";
-            string timestamp = DateTime.Now.ToString("yy-MM-dd_HH:mm:ss");
+            string timestamp = DateTime.Now.ToString("yy-MM-dd_HH_mm_ss");
             
             // Combine all parts to form the final name
             string backupName = $"{prefix}{timestamp}";
 
             return backupName;
         }
-        public static Dictionary<string, List<string>> ReadDictionaryFromFile(string filePath)
+
+        public static Dictionary<string, List<string>> ReadDictionaryFromFile(string fileName)
         {
-            Dictionary<string, List<string>> resultDictionary = new Dictionary<string, List<string>>();
+            Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
 
             try
             {
-                using (StreamReader reader = new StreamReader(filePath))
+                using (StreamReader reader = new StreamReader(fileName))
                 {
                     string line;
+                    string currentKey = null;
+                    List<string> currentList = new List<string>();
+
                     while ((line = reader.ReadLine()) != null)
                     {
-                        // Assuming the file format is key:value1,value2,value3,...
-                        string[] parts = line.Split(':');
-                        string key = parts[0].Trim();
-                        List<string> values = new List<string>(parts[1].Split(','));
+                        if (string.IsNullOrWhiteSpace(line))
+                        {
+                            // Empty line indicates the end of the current entry
+                            if (currentKey != null)
+                            {
+                                dictionary.Add(currentKey, currentList);
+                                currentKey = null;
+                                currentList = new List<string>();
+                            }
+                        }
+                        else
+                        {
+                            if (currentKey == null)
+                            {
+                                // First non-empty line is the key
+                                currentKey = line;
+                            }
+                            else
+                            {
+                                // Subsequent non-empty lines are values in the list
+                                currentList.Add(line);
+                            }
+                        }
+                    }
 
-                        resultDictionary[key] = values;
+                    // Add the last entry if it exists
+                    if (currentKey != null)
+                    {
+                        dictionary.Add(currentKey, currentList);
                     }
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An error occurred while reading from the file: {ex.Message}");
+                Console.WriteLine($"An error occurred: {ex.Message}");
             }
-            return resultDictionary;
+
+            return dictionary;
         }
-        public static void WriteDictionaryToFile(Dictionary<string, List<string>> dictionary, string newfilePath)
+        public static void WriteDictionaryToFile(string fileName, Dictionary<string, List<string>> dictionary)
         {
             try
             {
-                using (StreamWriter writer = new StreamWriter(newfilePath))
+                using (StreamWriter writer = new StreamWriter(fileName))
                 {
-                    foreach (var kvp in dictionary)
+                    foreach (var entry in dictionary)
                     {
-                        // Writing key and values to the file in the format key:value1,value2,value3,...
-                        string line = $"{kvp.Key}:{string.Join(",", kvp.Value)}";
-                        writer.WriteLine(line);
+                        // Write the key
+                        writer.WriteLine(entry.Key);
+
+                        // Write each item in the list
+                        foreach (var item in entry.Value)
+                        {
+                            writer.WriteLine(item);
+                        }
+
+                        // Separate entries with an empty line
+                        writer.WriteLine();
                     }
                 }
-
-                Console.WriteLine($"Dictionary successfully written to {newfilePath}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An error occurred while writing to the file: {ex.Message}");
+                Console.WriteLine($"An error occurred: {ex.Message}");
             }
         }
     }
