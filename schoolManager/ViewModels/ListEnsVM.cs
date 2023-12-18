@@ -14,8 +14,8 @@ internal class ListEnsVM
     public string enseignants => Enseignant.ListEnseignant;
     public string ens => Enseignant.getListEnseignant;
 
-    //Enseignant.ListEnseignant[getListEnseignant];
 
+    //Enseignant.ListEnseignant[getListEnseignant];
     // Enseignant.getListEnseignant(){0}.attrigbut1
     //List<Enseignant> enseignants = Enseignant.ListEnseignant;
     
