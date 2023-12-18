@@ -5,8 +5,8 @@
         private int ects;
         private string name;
         private string code;
-        public string Uid { get; set;}
-        private string UidTeacher{get;set;}
+        private string uid;
+        private string uidTeacher;
         private static List<Activite> listActivite = new List<Activite>();
 
         public Activite(string name, string code, string uidTeacher, int ects,string uid = "uninitiated")
@@ -17,8 +17,8 @@
             }
             this.name = name;
             this.code = code;
-            Uid = uid;
-            UidTeacher = uidTeacher;
+            this.uid = uid;
+            this.uidTeacher = uidTeacher;
             this.ects = ects;
             listActivite.Add(this);
         }
@@ -41,6 +41,16 @@
                 }
             }
             return new Activite("/","/","/",0);
+        }
+        public string Uid 
+        {
+            get{return uid;}
+            set{uid = value}
+        }
+        public string uidTeacher
+        {
+            get{return uidTeacher;}
+            set{uidTeacher = value}
         }
 
         public string Name

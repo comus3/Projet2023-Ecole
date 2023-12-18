@@ -2,7 +2,7 @@
 {
     public class Enseignant : Person
     {
-        public string Uid { get; set;}
+        private string uid;
         private int salaire;
         private static List<Enseignant> listEnseignant = new List<Enseignant>();
 
@@ -14,7 +14,7 @@
                 uid = GenerateNewUid();
             }
             this.salaire = salaire;
-            Uid = uid;
+            this.uid = uid;
             listEnseignant.Add(this);
         }
 
@@ -41,6 +41,11 @@
         {
             get { return salaire; }
             set { salaire = value; }
+        }
+        public string Uid 
+        {
+            get{return uid;}
+            set{uid = value}
         }
 
         public void Raise(int amt)

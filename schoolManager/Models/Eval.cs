@@ -2,9 +2,9 @@
 {
     public abstract class Eval
     {
-        private string Uid{ get; set;}
-        private string UidStudent{ get; set;}
-        private string UidActivite { get; set; }
+        private string uid;
+        private string uidStudent;
+        private string uidActivite;
         private static List<Eval> listEval = new List<Eval>();
 
         public Eval(string uidActivite,string uidStudent,string uid = "uninitiated")
@@ -13,9 +13,9 @@
             {
                 uid = GenerateNewUid();
             }
-            UidActivite = uidActivite;
-            UidStudent = uidStudent;
-            Uid = uid;
+            this.uidActivite = uidActivite;
+            this.uidStudent = uidStudent;
+            this.uid = uid;
             listEval.Add(this);
         }
 
@@ -46,6 +46,21 @@
         public static List<Eval> ListEval
         {
             get { return listEval; }
+        }
+        public string Uid 
+        {
+            get{return uid;}
+            set{uid = value}
+        }
+        public string Uid 
+        {
+            get{return uidStudent;}
+            set{uidStudent = value}
+        }
+        public string Uid 
+        {
+            get{return uidActivite;}
+            set{uidActivite = value}
         }
         private static string GenerateNewUid()
         {

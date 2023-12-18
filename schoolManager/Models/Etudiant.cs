@@ -3,7 +3,7 @@
     public class Etudiant : Person
     {
         private static List<Etudiant> listEtudiant = new List<Etudiant>();
-        public string UidStudent{ get; set;}
+        private string uidStudent;
         public Etudiant(string firstName, string lastName,string uidStudent="uninitiated") :
             base(firstName, lastName)
         {
@@ -11,7 +11,7 @@
             {
                 uidStudent = GenerateNewUid();
             }
-            UidStudent = uidStudent;
+            this.uidStudent = uidStudent;
             listEtudiant.Add(this);
         }
 
@@ -46,6 +46,11 @@
             return output;
         }
 
+        public string UidStudent 
+        {
+            get{return uidStudent;}
+            set{uidStudent = value}
+        }
         public static List<Etudiant> ListEtudiant
         {
             get { return listEtudiant; }
