@@ -2,14 +2,19 @@
 {
     public class Enseignant : Person
     {
-        private string Uid { get; set;}
+        public string Uid { get; set;}
         private int salaire;
         private static List<Enseignant> listEnseignant = new List<Enseignant>();
 
         public static Enseignant findEnseignant(string UID)
         {
-            if (UID == "Unasigned"){
-                return new Enseignant(0,"/","/");
+            Guid myGuid;
+            if (Guid.TryParse(UID, out myGuid))
+            {
+                if (myGuid == Guid.Empty)
+                {
+                    return new Enseignant(0,"/","/");
+                }
             }
             foreach (Enseignant enseignant in listEnseignant)
             {
