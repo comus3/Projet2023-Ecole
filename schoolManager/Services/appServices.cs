@@ -109,7 +109,7 @@ namespace schoolManager.Services
         private static void unpackAll(Dictionary<string, List<string>> data)
         {
             //call all unpackers with a switch case and consequently generate alll objects
-            // unpacking order MUST BE :  Enseignant => Activite => Evaluations (cotes,appreciations packed into a list) => Etudiants
+            // unpacking order MUST BE :  Enseignant => Activite => Etudiants   => Evaluations
 
             //for the appreciations and cotes maybe add attribute id that represents from which student the eval is so that you can associate it with after
 
@@ -148,6 +148,23 @@ namespace schoolManager.Services
                 Console.WriteLine($"Key 'Activite' not found in the dictionary.");
             }
 
+            //Etudiant
+            if (data.ContainsKey("Etudiant"))
+            {
+                // Retrieve the list associated with the key
+                List<string> etudiantList = data["Etudiant"];
+
+                // Iterate through the items in the list
+                foreach (string item in etudiantList)
+                {
+                    Console.WriteLine($"created {unpackEtudiant(item).ToString()} object");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Key 'Etudiant' not found in the dictionary.");
+            }
+
             //Cote
             if (data.ContainsKey("Cote"))
             {
@@ -182,22 +199,7 @@ namespace schoolManager.Services
                 Console.WriteLine($"Key 'Appreciations' not found in the dictionary.");
             }
 
-            //Etudiant
-            if (data.ContainsKey("Etudiant"))
-            {
-                // Retrieve the list associated with the key
-                List<string> etudiantList = data["Etudiant"];
-
-                // Iterate through the items in the list
-                foreach (string item in etudiantList)
-                {
-                    Console.WriteLine($"created {unpackEtudiant(item).ToString()} object");
-                }
-            }
-            else
-            {
-                Console.WriteLine($"Key 'Etudiant' not found in the dictionary.");
-            }
+            
    
         }
         
