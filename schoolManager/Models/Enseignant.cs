@@ -1,6 +1,4 @@
-﻿using schoolManager.Services;
-
-namespace schoolManager.Models
+﻿namespace schoolManager.Models
 {
     public class Enseignant : Person
     {
@@ -8,22 +6,26 @@ namespace schoolManager.Models
         private int salaire;
         private static List<Enseignant> listEnseignant = new List<Enseignant>();
 
-        public static Enseignant findEnseignant(int UID)
+        public static Enseignant findEnseignant(string UID)
         {
-            for (Enseignant enseignant in listEnseignant)
+            if (UID == "Unasigned"){
+                return new Enseignant(0,"/","/");
+            }
+            foreach (Enseignant enseignant in listEnseignant)
             {
                 if (enseignant.Uid == UID)
                 {
                     return enseignant;
                 }
             }
+            return new Enseignant(0,"/","/");
         }
 
         public Enseignant(int salaire, string firstName, string lastName) :
             base(firstName, lastName)
         {
             this.salaire = salaire;
-            Uid = Guid.GenerateNewUid(listEnseignant);
+            Uid = GenerateNewUid();
             listEnseignant.Add(this);
         }
 
@@ -41,6 +43,24 @@ namespace schoolManager.Models
         public static List<Enseignant> ListEnseignant
         {
             get { return listEnseignant; }
+        }
+
+        private static string GenerateNewUid()
+        {
+            string newUid;
+            bool isUnique;
+
+            do
+            {
+                // Generate a new UID
+                newUid = Guid.NewGuid().ToString();
+
+                // Check if the UID is unique
+                isUnique = !listEnseignant.Any(obj => obj.Uid == newUid);
+
+            } while (!isUnique);
+
+            return newUid;
         }
     }
 }
