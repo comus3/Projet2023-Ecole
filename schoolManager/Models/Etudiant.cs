@@ -49,7 +49,7 @@
         public string UidStudent 
         {
             get{return uidStudent;}
-            set{uidStudent = value}
+            set{uidStudent = value;}
         }
         public static List<Etudiant> ListEtudiant
         {

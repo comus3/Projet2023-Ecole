@@ -45,7 +45,7 @@
         public string Uid 
         {
             get{return uid;}
-            set{uid = value}
+            set{uid = value;}
         }
 
         public void Raise(int amt)

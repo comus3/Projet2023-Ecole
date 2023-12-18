@@ -45,12 +45,12 @@
         public string Uid 
         {
             get{return uid;}
-            set{uid = value}
+            set{uid = value;}
         }
-        public string uidTeacher
+        public string UidTeacher
         {
             get{return uidTeacher;}
-            set{uidTeacher = value}
+            set{uidTeacher = value;}
         }
 
         public string Name

@@ -50,17 +50,17 @@
         public string Uid 
         {
             get{return uid;}
-            set{uid = value}
+            set{uid = value;}
         }
-        public string Uid 
+        public string UidStudent 
         {
             get{return uidStudent;}
-            set{uidStudent = value}
+            set{uidStudent = value;}
         }
-        public string Uid 
+        public string UidActivite 
         {
             get{return uidActivite;}
-            set{uidActivite = value}
+            set{uidActivite = value;}
         }
         private static string GenerateNewUid()
         {
