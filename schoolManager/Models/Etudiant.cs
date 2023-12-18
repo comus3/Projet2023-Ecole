@@ -3,7 +3,7 @@
     public class Etudiant : Person
     {
         private static List<Etudiant> listEtudiant = new List<Etudiant>();
-        private string UidStudent{ get; set;}
+        public string UidStudent{ get; set;}
         public Etudiant(string firstName, string lastName,string uidStudent="uninitiated") :
             base(firstName, lastName)
         {
