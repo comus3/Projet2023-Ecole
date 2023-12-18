@@ -3,10 +3,10 @@
 //a faire: save ,load ,modfiy(immuable?)
 //
 using Newtonsoft.Json;
-using tester.DAL;
-using tester.Models;
+using schoolManager.DAL;
+using schoolManager.Models;
 
-namespace tester.Services
+namespace schoolManager.Services
 {
     public class AppServices
     {

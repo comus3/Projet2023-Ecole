@@ -2,25 +2,13 @@
 {
     public class Etudiant : Person
     {
-        private List<Eval> evaluations;
         private static List<Etudiant> listEtudiant = new List<Etudiant>();
-
-        public Etudiant(string firstName, string lastName, List<Eval> evaluations) :
+        private string UidStudent{ get; set;}
+        public Etudiant(string firstName, string lastName) :
             base(firstName, lastName)
         {
-            this.evaluations = evaluations;
+            UidStudent = GenerateNewUid();
             listEtudiant.Add(this);
-        }
-
-        public List<Eval> Evaluations
-        {
-            get { return evaluations; }
-            set { evaluations = value; }
-        }
-
-        public void AddEvaluation(Eval eval)
-        {
-            evaluations.Add(eval);
         }
 
         public double Average()
@@ -29,11 +17,12 @@
             int sumOfValues = 0;
             int sumOfECTS = 0;
 
-            foreach (Eval eval in evaluations)
+            foreach (Eval eval in Eval.findStudentEvals(UidStudent))
             {
+                int ECTS = eval.ActiviteObj.Ects;
                 numOfEval += 1;
-                sumOfValues += eval.Activite.Ects * eval.Note();
-                sumOfECTS += eval.Activite.Ects;
+                sumOfValues += ECTS * eval.Note();
+                sumOfECTS += ECTS;
             }
 
             return (double)sumOfValues / sumOfECTS / numOfEval;
@@ -43,10 +32,10 @@
         {
             string output = "";
 
-            foreach (Eval eval in evaluations)
+            foreach (Eval eval in Eval.findStudentEvals(UidStudent))
             {
                 output += string.Format("Pour le cours de {0}, vous avez une note de {1}. {2} Crédits",
-                    eval.Activite.Name, eval.Note(), eval.Activite.Ects);
+                    eval.ActiviteObj.Name, eval.Note(), eval.ActiviteObj.Ects);
             }
 
             output += string.Format("Pour une fabuleuse moyenne de {0}. Bravo {1}!", Average(), DisplayName());
@@ -56,6 +45,23 @@
         public static List<Etudiant> ListEtudiant
         {
             get { return listEtudiant; }
+        }
+        private static string GenerateNewUid()
+        {
+            string newUid;
+            bool isUnique;
+
+            do
+            {
+                // Generate a new UID
+                newUid = Guid.NewGuid().ToString();
+
+                // Check if the UID is unique
+                isUnique = !listEtudiant.Any(obj => obj.UidStudent == newUid);
+
+            } while (!isUnique);
+
+            return newUid;
         }
     }
 }

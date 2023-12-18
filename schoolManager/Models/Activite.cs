@@ -1,22 +1,42 @@
-﻿#nullable enable
-
-namespace schoolManager.Models
+﻿namespace schoolManager.Models
 {
     public class Activite
     {
         private int ects;
         private string name;
         private string code;
-        private Enseignant? enseignant;
+        public string Uid { get; set;}
+        private string UidTeacher{get;set;}
         private static List<Activite> listActivite = new List<Activite>();
 
-        public Activite(string name, string code, Enseignant enseignant, int ects)
+        public Activite(string name, string code, string uidTeacher, int ects)
         {
             this.name = name;
             this.code = code;
-            this.enseignant = enseignant;
+            Uid = GenerateNewUid();
+            UidTeacher = uidTeacher;
             this.ects = ects;
             listActivite.Add(this);
+        }
+
+        public static Activite findActivite(string UID)
+        {
+            Guid myGuid;
+            if (Guid.TryParse(UID, out myGuid))
+            {
+                if (myGuid == Guid.Empty)
+                {
+                    return new Activite("/","/","/",0);
+                }
+            }
+            foreach (Activite activite in listActivite)
+            {
+                if (activite.Uid == UID)
+                {
+                    return activite;
+                }
+            }
+            return new Activite("/","/","/",0);
         }
 
         public string Name
@@ -31,10 +51,10 @@ namespace schoolManager.Models
             set { code = value; }
         }
 
-        public Enseignant Enseignant
+        public Enseignant EnseignantObj
         {
-            get { return enseignant; }
-            set { enseignant = value; }
+            get { return Enseignant.findEnseignant(UidTeacher); }
+            set { UidTeacher = value.Uid; }
         }
 
         public int Ects
@@ -46,6 +66,23 @@ namespace schoolManager.Models
         public static List<Activite> ListActivite
         {
             get { return listActivite; }
+        }
+        private static string GenerateNewUid()
+        {
+            string newUid;
+            bool isUnique;
+
+            do
+            {
+                // Generate a new UID
+                newUid = Guid.NewGuid().ToString();
+
+                // Check if the UID is unique
+                isUnique = !listActivite.Any(obj => obj.Uid == newUid);
+
+            } while (!isUnique);
+
+            return newUid;
         }
     }
 }
