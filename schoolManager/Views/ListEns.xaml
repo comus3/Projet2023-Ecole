@@ -4,9 +4,12 @@
              xmlns:viewModels="clr-namespace:schoolManager.ViewModels"
              x:Class="schoolManager.Views.ListEns"
              Title="Liste des Enseignants">    
-    <ContentPage.Content>
+    <ContentPage.BindingContext>
+        <viewModels:ListEnsVM />
+    </ContentPage.BindingContext>
         <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label Text="hueriohvioerho"/>
+        <Label Text="{Binding Ens}" />
         <Label FontSize="22" FontAttributes="Bold" Text="{Binding Ens}" VerticalOptions="End" />
         </StackLayout>
-    </ContentPage.Content>
 </ContentPage>
