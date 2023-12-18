@@ -55,10 +55,14 @@
             set { code = value; }
         }
 
-        public Enseignant EnseignantObj
+        public Enseignant EnseignantObjGet()
         {
-            get { return Enseignant.findEnseignant(UidTeacher); }
-            set { UidTeacher = value.Uid; }
+            return Enseignant.findEnseignant(UidTeacher);
+        }
+
+        public void EnseignantObjSet(Enseignant enseignant)
+        {
+            UidTeacher = enseignant.Uid;
         }
 
         public int Ects
