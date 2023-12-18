@@ -4,10 +4,14 @@
     {
         private static List<Etudiant> listEtudiant = new List<Etudiant>();
         private string UidStudent{ get; set;}
-        public Etudiant(string firstName, string lastName) :
+        public Etudiant(string firstName, string lastName,string uidStudent="uninitiated") :
             base(firstName, lastName)
         {
-            UidStudent = GenerateNewUid();
+            if (uidStudent == "uninitiated")
+            {
+                uidStudent = GenerateNewUid();
+            }
+            UidStudent = uidStudent;
             listEtudiant.Add(this);
         }
 

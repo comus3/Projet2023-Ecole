@@ -7,11 +7,15 @@
         private string UidActivite { get; set; }
         private static List<Eval> listEval = new List<Eval>();
 
-        public Eval(string uidActivite,string uidStudent)
+        public Eval(string uidActivite,string uidStudent,string uid = "uninitiated")
         {
+            if (uid == "uninitiated")
+            {
+                uid = GenerateNewUid();
+            }
             UidActivite = uidActivite;
             UidStudent = uidStudent;
-            Uid = GenerateNewUid();
+            Uid = uid;
             listEval.Add(this);
         }
 

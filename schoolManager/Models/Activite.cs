@@ -9,11 +9,15 @@
         private string UidTeacher{get;set;}
         private static List<Activite> listActivite = new List<Activite>();
 
-        public Activite(string name, string code, string uidTeacher, int ects)
+        public Activite(string name, string code, string uidTeacher, int ects,string uid = "uninitiated")
         {
+            if (uid == "uninitiated")
+            {
+                uid = GenerateNewUid();
+            }
             this.name = name;
             this.code = code;
-            Uid = GenerateNewUid();
+            Uid = uid;
             UidTeacher = uidTeacher;
             this.ects = ects;
             listActivite.Add(this);
