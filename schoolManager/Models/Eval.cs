@@ -2,19 +2,36 @@
 {
     public abstract class Eval
     {
-        private Activite activite;
+        private string Uid{ get; set;}
+        private string UidStudent{ get; set;}
+        private string UidActivite { get; set; }
         private static List<Eval> listEval = new List<Eval>();
 
-        public Eval(Activite activite)
+        public Eval(string uidActivite,string uidStudent)
         {
-            this.activite = activite;
+            UidActivite = uidActivite;
+            UidStudent = uidStudent;
+            Uid = GenerateNewUid();
             listEval.Add(this);
         }
 
-        public Activite Activite
+        public static List<Eval> findStudentEvals(string uidStudent)
         {
-            get { return activite; }
-            set { activite = value; }
+            List<Eval> result = new List<Eval>();
+            foreach (Eval eval in listEval)
+            {
+                if(uidStudent == eval.UidStudent)
+                {
+                    result.Add(eval);
+                }
+            }
+            return result;
+        }
+
+        public Activite ActiviteObj
+        {
+            get { return Activite.findActivite(Uid); }
+            set { UidActivite = value.Uid; }
         }
 
         public abstract int Note();
@@ -22,6 +39,23 @@
         public static List<Eval> ListEval
         {
             get { return listEval; }
+        }
+        private static string GenerateNewUid()
+        {
+            string newUid;
+            bool isUnique;
+
+            do
+            {
+                // Generate a new UID
+                newUid = Guid.NewGuid().ToString();
+
+                // Check if the UID is unique
+                isUnique = !listEval.Any(obj => obj.Uid == newUid);
+
+            } while (!isUnique);
+
+            return newUid;
         }
     }
 }
