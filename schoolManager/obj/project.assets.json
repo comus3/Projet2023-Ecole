@@ -216,7 +216,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.92": {
+      "Microsoft.Maui.Graphics/7.0.101": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
@@ -229,11 +229,11 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.92": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.101": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.5.1",
-          "Microsoft.Maui.Graphics": "7.0.92",
+          "Microsoft.Maui.Graphics": "7.0.101",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756",
           "Microsoft.WindowsAppSDK": "1.2.221209.1"
         },
@@ -570,7 +570,7 @@
           "build/net5.0-windows10.0.17763.0/_._": {}
         }
       },
-      "Microsoft.Maui.Graphics/7.0.92": {
+      "Microsoft.Maui.Graphics/7.0.101": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
@@ -583,11 +583,11 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.92": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.101": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.5.1",
-          "Microsoft.Maui.Graphics": "7.0.92",
+          "Microsoft.Maui.Graphics": "7.0.101",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756",
           "Microsoft.WindowsAppSDK": "1.2.221209.1"
         },
@@ -1066,10 +1066,10 @@
         "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll"
       ]
     },
-    "Microsoft.Maui.Graphics/7.0.92": {
-      "sha512": "fe9pKhm5LZGsAbEZQg7VEHGer76h8m8VPkGRWJ4P0+3QMu3yXOYmOiA60Wskjk8Mrd6eXZCQUWTTeley1agYQg==",
+    "Microsoft.Maui.Graphics/7.0.101": {
+      "sha512": "2+dHQpufctgN66Y+otNnBu9o+ODYlHvc2ufQ185wB2GqhklQeeko4xFsZSj3weDif4Idg0cgAY84qU3cQ0OcTw==",
       "type": "package",
-      "path": "microsoft.maui.graphics/7.0.92",
+      "path": "microsoft.maui.graphics/7.0.101",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1105,14 +1105,14 @@
         "lib/netstandard2.1/Microsoft.Maui.Graphics.dll",
         "lib/netstandard2.1/Microsoft.Maui.Graphics.pdb",
         "lib/netstandard2.1/Microsoft.Maui.Graphics.xml",
-        "microsoft.maui.graphics.7.0.92.nupkg.sha512",
+        "microsoft.maui.graphics.7.0.101.nupkg.sha512",
         "microsoft.maui.graphics.nuspec"
       ]
     },
-    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.92": {
-      "sha512": "4snL9nMCGIzZ6utx8T8X42k3TjaA1PZY7Mpr1/LFyvxanja4f+zWroierjBCciBNoz8Zb0RJEMxxpr16SUcRGw==",
+    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.101": {
+      "sha512": "P6uBnryY3b3rpLiKj173UIf4z/dWJqntEabUiPBlJgXIcR4+u8IQg00cADNw+OsSD1yZwSwL+4pEFp5YyiOf/A==",
       "type": "package",
-      "path": "microsoft.maui.graphics.win2d.winui.desktop/7.0.92",
+      "path": "microsoft.maui.graphics.win2d.winui.desktop/7.0.101",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1122,7 +1122,7 @@
         "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.pdb",
         "lib/net7.0-windows10.0.20348/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll",
         "lib/net7.0-windows10.0.20348/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.pdb",
-        "microsoft.maui.graphics.win2d.winui.desktop.7.0.92.nupkg.sha512",
+        "microsoft.maui.graphics.win2d.winui.desktop.7.0.101.nupkg.sha512",
         "microsoft.maui.graphics.win2d.winui.desktop.nuspec"
       ]
     },
@@ -2014,10 +2014,9 @@
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
-      "Microsoft.Extensions.Logging.Abstractions >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
-      "Microsoft.Maui.Graphics >= 7.0.92",
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop >= 7.0.92",
+      "Microsoft.Maui.Graphics >= 7.0.101",
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop >= 7.0.101",
       "Microsoft.VisualStudio.UnitTesting >= 11.0.50727.1",
       "Microsoft.WindowsAppSDK >= 1.2.221209.1",
       "Newtonsoft.Json >= 13.0.3"
@@ -2029,11 +2028,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
+      "projectUniqueName": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\temp\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
       "projectName": "schoolManager",
-      "projectPath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
+      "projectPath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\temp\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
       "packagesPath": "C:\\Users\\Cath\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\obj\\",
+      "outputPath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\temp\\Projet2023-Ecole\\schoolManager\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
@@ -2081,23 +2080,18 @@
             "version": "[7.0.0, )",
             "autoReferenced": true
           },
-          "Microsoft.Extensions.Logging.Abstractions": {
-            "target": "Package",
-            "version": "[7.0.0, )",
-            "autoReferenced": true
-          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[7.0.0, )"
           },
           "Microsoft.Maui.Graphics": {
             "target": "Package",
-            "version": "[7.0.92, )",
+            "version": "[7.0.101, )",
             "autoReferenced": true
           },
           "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
             "target": "Package",
-            "version": "[7.0.92, )",
+            "version": "[7.0.101, )",
             "autoReferenced": true
           },
           "Microsoft.VisualStudio.UnitTesting": {
@@ -2127,20 +2121,60 @@
         "warn": true,
         "downloadDependencies": [
           {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[7.0.11, 7.0.11]"
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.Maui.Controls.Ref.win",
+            "version": "[7.0.101, 7.0.101]"
+          },
+          {
+            "name": "Microsoft.Maui.Controls.Runtime.win",
+            "version": "[7.0.101, 7.0.101]"
+          },
+          {
+            "name": "Microsoft.Maui.Core.Ref.win",
+            "version": "[7.0.101, 7.0.101]"
+          },
+          {
+            "name": "Microsoft.Maui.Core.Runtime.win",
+            "version": "[7.0.101, 7.0.101]"
+          },
+          {
+            "name": "Microsoft.Maui.Essentials.Ref.win",
+            "version": "[7.0.101, 7.0.101]"
+          },
+          {
+            "name": "Microsoft.Maui.Essentials.Runtime.win",
+            "version": "[7.0.101, 7.0.101]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[7.0.11, 7.0.11]"
+            "version": "[7.0.14, 7.0.14]"
           },
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
-            "version": "[10.0.19041.29, 10.0.19041.29]"
+            "version": "[10.0.19041.31, 10.0.19041.31]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[7.0.11, 7.0.11]"
+            "version": "[7.0.14, 7.0.14]"
           }
         ],
         "frameworkReferences": {
@@ -2160,7 +2194,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
@@ -2170,12 +2204,6 @@
     }
   },
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

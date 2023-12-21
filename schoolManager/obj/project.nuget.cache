@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lSd8c6c8OOS3kiQR/Z2D+OUsJhm74VPvhuD1spwp2+lc67k1xgE9nwoRkl1MOgKfWr4uOEV0ij9sdBn7eLRaIg==",
+  "dgSpecHash": "S/w06E9dEXE9rNPXyY2DRtEgY/YE+JbHwLt1hjgv3Fe/dqAIaf1rw6l3qdumw+ZlcxyotcO9ZYTKj5gI7tmG4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
+  "projectFilePath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\temp\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cath\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\Cath\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
@@ -15,24 +15,28 @@
     "C:\\Users\\Cath\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\Cath\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Cath\\.nuget\\packages\\microsoft.graphics.win2d\\1.0.5.1\\microsoft.graphics.win2d.1.0.5.1.nupkg.sha512",
-    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.graphics\\7.0.92\\microsoft.maui.graphics.7.0.92.nupkg.sha512",
-    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\7.0.92\\microsoft.maui.graphics.win2d.winui.desktop.7.0.92.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.graphics\\7.0.101\\microsoft.maui.graphics.7.0.101.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\7.0.101\\microsoft.maui.graphics.win2d.winui.desktop.7.0.101.nupkg.sha512",
     "C:\\Users\\Cath\\.nuget\\packages\\microsoft.visualstudio.unittesting\\11.0.50727.1\\microsoft.visualstudio.unittesting.11.0.50727.1.nupkg.sha512",
     "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
     "C:\\Users\\Cath\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.11\\microsoft.netcore.app.runtime.win-x64.7.0.11.nupkg.sha512",
-    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.11\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.11.nupkg.sha512",
-    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.11\\microsoft.aspnetcore.app.runtime.win-x64.7.0.11.nupkg.sha512",
-    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.29\\microsoft.windows.sdk.net.ref.10.0.19041.29.nupkg.sha512"
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.14\\microsoft.netcore.app.runtime.win-x64.7.0.14.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.14\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.14.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.14\\microsoft.aspnetcore.app.runtime.win-x64.7.0.14.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.core.ref.win\\7.0.101\\microsoft.maui.core.ref.win.7.0.101.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.core.runtime.win\\7.0.101\\microsoft.maui.core.runtime.win.7.0.101.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.controls.ref.win\\7.0.101\\microsoft.maui.controls.ref.win.7.0.101.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.controls.runtime.win\\7.0.101\\microsoft.maui.controls.runtime.win.7.0.101.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.essentials.ref.win\\7.0.101\\microsoft.maui.essentials.ref.win.7.0.101.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.maui.essentials.runtime.win\\7.0.101\\microsoft.maui.essentials.runtime.win.7.0.101.nupkg.sha512",
+    "C:\\Users\\Cath\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

@@ -9,8 +9,8 @@
     </ContentPage.BindingContext>
     <VerticalStackLayout Spacing="10" Margin="10">
         <HorizontalStackLayout Spacing="10">
-            <Label FontSize="22" FontAttributes="Bold" Text="{Binding Title}" VerticalOptions="End" />
-            <Label FontSize="22" Text="{Binding Version}" VerticalOptions="End" />
+            <Label FontSize="22" FontAttributes="Bold" Text="{Binding}" VerticalOptions="End" />
+            <Label FontSize="22" Text="{Binding}" VerticalOptions="End" />
         </HorizontalStackLayout>
 
         <Label Text="{Binding Message}" />

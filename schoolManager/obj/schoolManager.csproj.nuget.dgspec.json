@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj": {}
+    "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\temp\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj": {
+    "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\temp\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
+        "projectUniqueName": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\temp\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
         "projectName": "schoolManager",
-        "projectPath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
+        "projectPath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\temp\\Projet2023-Ecole\\schoolManager\\schoolManager.csproj",
         "packagesPath": "C:\\Users\\Cath\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\Projet\\Projet2023-Ecole\\schoolManager\\obj\\",
+        "outputPath": "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\temp\\Projet2023-Ecole\\schoolManager\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -59,23 +59,18 @@
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.92, )",
+              "version": "[7.0.101, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
               "target": "Package",
-              "version": "[7.0.92, )",
+              "version": "[7.0.101, )",
               "autoReferenced": true
             },
             "Microsoft.VisualStudio.UnitTesting": {
@@ -105,20 +100,60 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.11, 7.0.11]"
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Ref.win",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Runtime.win",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Ref.win",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Runtime.win",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Ref.win",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Runtime.win",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[7.0.11, 7.0.11]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.19041.29, 10.0.19041.29]"
+              "version": "[10.0.19041.31, 10.0.19041.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.11, 7.0.11]"
+              "version": "[7.0.14, 7.0.14]"
             }
           ],
           "frameworkReferences": {
@@ -138,7 +173,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

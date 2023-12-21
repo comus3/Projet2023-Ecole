@@ -8,7 +8,7 @@
         <viewModels:ListStudVM />
     </ContentPage.BindingContext>
         <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-        <Label FontSize="22" FontAttributes="Bold" Text="{Binding Stud}" VerticalOptions="End" />
+        <Label FontSize="22" FontAttributes="Bold" Text="{Binding}" VerticalOptions="End" />
         <Button Text="Retour a la page Home" Clicked="Button_Home"/>
         </StackLayout>
 </ContentPage>
