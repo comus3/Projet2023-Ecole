@@ -13,5 +13,10 @@
         <Button Text="Liste des Enseignants" Clicked="Button_ListEns"/>
         <Button Text="Liste des Activités" Clicked="Button_ListAct"/>
         <Button Text="Liste des Élèves" Clicked="Button_ListStud"/>
+        
+        <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"/>
+        <Label Text="Gestion des données"/>
+        <Button Text="Sauvegarde des données" Clicked="Save"/>
+        <Button Text="Chargement des données" Clicked="Load"/>
     </VerticalStackLayout>
 </ContentPage>
