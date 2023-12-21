@@ -35,9 +35,6 @@
         </DataTemplate>
     </CollectionView.ItemTemplate>
     </CollectionView>
-    </StackLayout>
-    <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand">
-        <Label FontSize="22" FontAttributes="Bold" Text="{Binding Act}" VerticalOptions="End" />
-        <Button Text="Retour a la page Home" Clicked="Button_Home"/>
+    <Button Text="Retour a la page Home" Clicked="Button_Home"/>
     </StackLayout>
 </ContentPage>
