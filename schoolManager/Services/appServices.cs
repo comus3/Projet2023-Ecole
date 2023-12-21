@@ -5,19 +5,59 @@
 using Newtonsoft.Json;
 using schoolManager.DAL;
 using schoolManager.Models;
+using System;
+using System.IO;
+using System.Linq;
 
 namespace schoolManager.Services
 {
     public class AppServices
     {
+        public static string directoryPath; // ici le dossier de backup
         private static Dictionary<string, List<string>> data;
         private static string filePath;
         //METHODES PUBLIQUES
         public static void loadData()
         {
             //constructor : makes the file path and then calls intit
-            filePath = "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\temp\\Projet2023-Ecole\\schoolManager";
-            InitializeData(filePath);
+            directoryPath = @"C:\blablabla";
+            filePath = FindMostRecentBackup();
+            InitializeData(Path.Combine(directoryPath, filePath));
+        }
+        private static string FindMostRecentBackup()
+        {
+            
+            string searchPattern = "data_Backup_Of_*.*";
+
+            try
+            {
+                // Get all files that match the pattern
+                var backupFiles = Directory.GetFiles(directoryPath, searchPattern);
+
+                if (backupFiles.Length > 0)
+                {
+                    // Use LINQ to find the most recently created file
+                    var mostRecentFile = backupFiles
+                        .Select(file => new FileInfo(file))
+                        .OrderByDescending(fileInfo => fileInfo.CreationTime)
+                        .First();
+
+                    // Get the full path of the most recently created file
+                    string filePath = mostRecentFile.FullName;
+
+                    return filePath;
+                }
+                else
+                {
+                    Console.WriteLine("No matching backup files found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
+
+            return null;
         }
         public static void SaveChanges()
         {
