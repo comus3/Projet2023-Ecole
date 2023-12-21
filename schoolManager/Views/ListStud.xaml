@@ -29,7 +29,6 @@
 
             <Label Text="{Binding FirstName}" Grid.Column="0" />
             <Label Text="{Binding LastName}" Grid.Column="1" />
-            <Label Text="{Binding Eval}" Grid.Column="2" />
         </Grid>
         </DataTemplate>
     </CollectionView.ItemTemplate>
