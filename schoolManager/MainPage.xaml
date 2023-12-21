@@ -1,41 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="schoolManager.MainPage">
-
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Projet 2023-Ecole!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
-    </ScrollView>
-
+             x:Class="schoolManager.MainPage"
+             Title="Home Page"> 
+    <VerticalStackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label Text="Ajouter" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,10,0,5"/>
+        <Button x:Name="redirectEns" Text="Ajouter un Enseignant" SemanticProperties.Hint="Redirect on Ens page" Clicked="Button_AddEns" />
+        <Button x:Name="redirectAct" Text="Ajouter une Activité" SemanticProperties.Hint="Redirect on Act page" Clicked="Button_AddAct" />
+        <Button x:Name="redirectStud" Text="Ajouter un Élève" SemanticProperties.Hint="Redirect on Stud page" Clicked="Button_AddStud" />
+        
+        <Label Text="Afficher" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,10,0,5"/>
+        <Button Text="Liste des Enseignants" Clicked="Button_ListEns"/>
+        <Button Text="Liste des Activités" Clicked="Button_ListAct"/>
+        <Button Text="Liste des Élèves" Clicked="Button_ListStud"/>
+    </VerticalStackLayout>
 </ContentPage>

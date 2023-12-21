@@ -3,22 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "schoolManager", "schoolManager\schoolManager.csproj", "{919D1413-AB52-4459-BCFF-9D288DEB8F8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "schoolManager", "schoolManager\schoolManager.csproj", "{6EA127E0-F911-4708-A139-687CAF524D09}"
 EndProject
-#Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "schoolManager", "schoolManager", "{83BA7E67-B978-4032-BF4A-3CB6680AC541}"
-#EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{919D1413-AB52-4459-BCFF-9D288DEB8F8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{919D1413-AB52-4459-BCFF-9D288DEB8F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{919D1413-AB52-4459-BCFF-9D288DEB8F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{919D1413-AB52-4459-BCFF-9D288DEB8F8C}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EA127E0-F911-4708-A139-687CAF524D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA127E0-F911-4708-A139-687CAF524D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA127E0-F911-4708-A139-687CAF524D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA127E0-F911-4708-A139-687CAF524D09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
