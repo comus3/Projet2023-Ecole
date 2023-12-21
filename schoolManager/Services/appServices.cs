@@ -16,7 +16,7 @@ namespace schoolManager.Services
         public static void loadData()
         {
             //constructor : makes the file path and then calls intit
-            filePath = "data_Backup_Of_23-12-18_16_12_43";
+            filePath = "C:\\Users\\Cath\\Desktop\\Ecam\\3BE\\Software engineering 1\\Laboratoire concepts informatiques\\temp\\Projet2023-Ecole\\schoolManager";
             InitializeData(filePath);
         }
         public static void SaveChanges()
