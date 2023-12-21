@@ -47,6 +47,10 @@ namespace schoolManager.Models
             get{return uid;}
             set{uid = value;}
         }
+        public string FisrtName 
+        {
+            get{return FirstName;}
+        }
 
         public void Raise(int amt)
         {
