@@ -14,7 +14,7 @@
 
             <Label Text="FirstName" Grid.Column="0" />
             <Label Text="LastName" Grid.Column="1" />
-            <Label Text="Evaluations" Grid.Column="2" />
+            <Label Text="UidStudent" Grid.Column="2" />
     </Grid>
     
     <CollectionView ItemsSource="{Binding StudList}">
@@ -29,6 +29,7 @@
 
             <Label Text="{Binding FirstName}" Grid.Column="0" />
             <Label Text="{Binding LastName}" Grid.Column="1" />
+            <Label Text="{Binding UidStudent}" Grid.Column="2" />
         </Grid>
         </DataTemplate>
     </CollectionView.ItemTemplate>
