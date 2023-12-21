@@ -5,7 +5,7 @@
              x:Class="schoolManager.Views.ListEns"
              Title="Liste des Enseignants">    
 
-    <StackLayout  Margin="0,100,0,0" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+    <StackLayout  Margin="0,100,0,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
         <Grid>
             <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -35,5 +35,9 @@
         </DataTemplate>
     </CollectionView.ItemTemplate>
     </CollectionView>
+    </StackLayout>
+    <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand">
+        <Label FontSize="22" FontAttributes="Bold" Text="{Binding Act}" VerticalOptions="End" />
+        <Button Text="Retour a la page Home" Clicked="Button_Home"/>
     </StackLayout>
 </ContentPage>
