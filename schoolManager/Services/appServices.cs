@@ -20,10 +20,7 @@ namespace schoolManager.Services
         public static void loadData()
         {
             //constructor : makes the file path and then calls intit
-<<<<<<< HEAD
-            filePath = "C:/Users/Cath/Desktop/Ecam/data_Backup_Of_23-12-18_16_12_43";
-            InitializeData(filePath);
-=======
+
             directoryPath = @"C:\blablabla";
             filePath = FindMostRecentBackup();
             InitializeData(Path.Combine(directoryPath, filePath));
@@ -62,7 +59,6 @@ namespace schoolManager.Services
             }
 
             return null;
->>>>>>> 9faffec44296d9969920c1cdcad68bfee8cb54a3
         }
         public static void SaveChanges()
         {
