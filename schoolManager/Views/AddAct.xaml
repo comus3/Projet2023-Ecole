@@ -4,17 +4,23 @@
              xmlns:viewModels="clr-namespace:schoolManager.ViewModels"
              x:Class="schoolManager.Views.AddAct"
              Title="Ajouter des Activités">
-    <ContentPage.BindingContext>
-        <viewModels:AddActVM />
-    </ContentPage.BindingContext>
-    <VerticalStackLayout Spacing="10" Margin="10">
-        <HorizontalStackLayout Spacing="10">
-            <Label FontSize="22" FontAttributes="Bold" Text="{Binding}" VerticalOptions="End" />
-            <Label FontSize="22" Text="{Binding}" VerticalOptions="End" />
-        </HorizontalStackLayout>
+      <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
 
-        <Label Text="{Binding Message}" />
-        <Button Text="Learn more..." Command="{Binding ShowMoreInfoCommand}" />
-    </VerticalStackLayout>
+        <Label Text="Create Activite" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,10,0,5"/>
 
+        <Label Text="Teacher" FontSize="16" Margin="0,10,0,0"/>
+        <Picker x:Name="teacherPicker" Title="Undefined" SelectedIndexChanged="OnTeacherSelectedIndexChanged"/>
+
+        <Label Text="Name" FontSize="16" Margin="0,10,0,0"/>
+        <Entry x:Name="nameEntry" Placeholder="Enter name"/>
+
+        <Label Text="Code" FontSize="16" Margin="0,10,0,0"/>
+        <Entry x:Name="codeEntry" Placeholder="Enter code"/>
+
+        <Label Text="ECTS" FontSize="16" Margin="0,10,0,0"/>
+        <Entry x:Name="ectsEntry" Placeholder="Enter ECTS" Keyboard="Numeric"/>
+
+        <Button Text="Create" Clicked="OnCreateClicked" Margin="0,20,0,0"/>
+
+    </StackLayout>
 </ContentPage>
