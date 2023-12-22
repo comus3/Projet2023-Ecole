@@ -21,7 +21,7 @@ namespace schoolManager.Services
         {
             //constructor : makes the file path and then calls intit
 
-            directoryPath = @"C:\blablabla";
+            directoryPath = @"C:\Users\Cath\Desktop\Ecam\Backup_folder";
             filePath = FindMostRecentBackup();
             InitializeData(Path.Combine(directoryPath, filePath));
         }
