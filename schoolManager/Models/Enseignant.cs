@@ -37,7 +37,7 @@ namespace schoolManager.Models
             }
             return new Enseignant(0,"/","/");
         }
-        public string getUidFromName(string name)
+        public static string getUidFromName(string name)
         {
         foreach (Enseignant enseignant in listEnseignant)
             {
