@@ -37,6 +37,17 @@ namespace schoolManager.Models
             }
             return new Enseignant(0,"/","/");
         }
+        public string getUidFromName(string name)
+        {
+        foreach (Enseignant enseignant in listEnseignant)
+            {
+                if (enseignant.FirstName == name)
+                {
+                    return enseignant.Uid;
+                }
+            }
+        return Guid.Empty.ToString();
+        }
         public int Salaire
         {
             get { return salaire; }
@@ -47,7 +58,6 @@ namespace schoolManager.Models
             get{return uid;}
             set{uid = value;}
         }
-
         public void Raise(int amt)
         {
             salaire += amt;
