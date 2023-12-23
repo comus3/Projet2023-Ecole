@@ -4,11 +4,35 @@
              xmlns:viewModels="clr-namespace:schoolManager.ViewModels"
              x:Class="schoolManager.Views.ListStud"
              Title="Liste des Élèves">   
-    <ContentPage.BindingContext>
-        <viewModels:ListStudVM />
-    </ContentPage.BindingContext>
-        <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-        <Label FontSize="22" FontAttributes="Bold" Text="{Binding Stud}" VerticalOptions="End" />
-        <Button Text="Retour a la page Home" Clicked="Button_Home"/>
-        </StackLayout>
+    <StackLayout  Margin="0,100,0,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+    <Grid>
+        <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="FirstName" Grid.Column="0" />
+        <Label Text="LastName" Grid.Column="1" />
+    </Grid>
+
+    <CollectionView ItemsSource="{Binding StudList}">
+    <CollectionView.ItemTemplate>
+        <DataTemplate>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="{Binding FirstName}" Grid.Column="0" />
+            <Label Text="{Binding LastName}" Grid.Column="1" />
+        </Grid>
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+    </CollectionView>
+    <Button Text="Retour a la page Home" Clicked="Button_Home"/>
+    </StackLayout>
 </ContentPage>

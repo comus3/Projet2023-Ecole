@@ -4,17 +4,17 @@
              xmlns:viewModels="clr-namespace:schoolManager.ViewModels"
              x:Class="schoolManager.Views.AddEns"
              Title="Ajouter des Enseignants">
-    <ContentPage.BindingContext>
-        <viewModels:AddEnsVM />
-    </ContentPage.BindingContext>
-    <VerticalStackLayout Spacing="10" Margin="10">
-        <HorizontalStackLayout Spacing="10">
-            <Label FontSize="22" FontAttributes="Bold" Text="{Binding Title}" VerticalOptions="End" />
-            <Label FontSize="22" Text="{Binding Version}" VerticalOptions="End" />
-        </HorizontalStackLayout>
+     
+     <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label Text="Salaire:" />
+        <Entry x:Name="salaireEntry" Placeholder="Enter salaire" />
 
-        <Label Text="{Binding Message}" />
-        <Button Text="Learn more..." Command="{Binding ShowMoreInfoCommand}" />
-    </VerticalStackLayout>
+        <Label Text="First Name:" />
+        <Entry x:Name="firstNameEntry" Placeholder="Enter First Name" />
 
+        <Label Text="Last Name:" />
+        <Entry x:Name="lastNameEntry" Placeholder="Enter Last Name" />
+
+        <Button Text="Create" Clicked="OnCreateClicked" />
+    </StackLayout>
 </ContentPage>

@@ -4,13 +4,37 @@
              xmlns:viewModels="clr-namespace:schoolManager.ViewModels"
              x:Class="schoolManager.Views.ListEns"
              Title="Liste des Enseignants">    
-    <ContentPage.BindingContext>
-        <viewModels:ListEnsVM />
-    </ContentPage.BindingContext>
-    <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-        <Label Text="hueriohvioerho"/>
-        <Label Text="{Binding Enss}" />
-        <Label FontSize="22" FontAttributes="Bold" Text="{Binding Ens}" VerticalOptions="End" />
-        <Button Text="Retour a la page Home" Clicked="Button_Home"/>
+
+    <StackLayout  Margin="0,100,0,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Grid>
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="FirstName" Grid.Column="0" />
+            <Label Text="LastName" Grid.Column="1" />
+            <Label Text="Salaire" Grid.Column="2" />
+    </Grid>
+    
+    <CollectionView ItemsSource="{Binding DisplayList}">
+    <CollectionView.ItemTemplate>
+        <DataTemplate>
+        <Grid>
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="{Binding FirstName}" Grid.Column="0" />
+            <Label Text="{Binding LastName}" Grid.Column="1" />
+            <Label Text="{Binding Salaire}" Grid.Column="2" />
+        </Grid>
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+    </CollectionView>
+    <Button Text="Retour a la page Home" Clicked="Button_Home"/>
     </StackLayout>
 </ContentPage>
