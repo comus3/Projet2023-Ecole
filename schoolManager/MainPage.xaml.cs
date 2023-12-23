@@ -1,4 +1,5 @@
-﻿using schoolManager.Views;
+﻿using schoolManager.Services;
+using schoolManager.Views;
 
 namespace schoolManager;
 
@@ -47,5 +48,14 @@ public partial class MainPage : ContentPage
 	private void Button_ListStud(object sender, EventArgs e)
 	{
 		Navigation.PushAsync(new ListStud());
+	}
+	private void Save(object sender, EventArgs e){
+		AppServices.SaveChanges();
+		DisplayAlert("Success","the changes are saved","Ok");
+
+	}
+	private void Load(object sender, EventArgs e){
+		AppServices.loadData();
+		DisplayAlert("Success","the data are loaded","Ok");			
 	}
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using schoolManager.Services;
 
 namespace schoolManager;
 
@@ -6,6 +7,8 @@ public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
 	{
+		AppServices.loadData();
+		Console.WriteLine("data loaded");
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()

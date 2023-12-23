@@ -8,7 +8,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-
+using schoolManager.Services;
 
 namespace schoolManager.DAL
 {
@@ -83,7 +83,19 @@ namespace schoolManager.DAL
         {
             try
             {
-                using (StreamWriter writer = new StreamWriter(fileName))
+                string directoryPath = AppServices.directoryPath; // Update this with your actual directory path
+
+                // Ensure the directory exists, create it if necessary
+                if (!Directory.Exists(directoryPath))
+                {
+                    Directory.CreateDirectory(directoryPath);
+                }
+
+                // Combine the directory path and file name
+                string fullPath = Path.Combine(directoryPath, fileName);
+
+                // Write to the specified file path
+                using (StreamWriter writer = new StreamWriter(fullPath))
                 {
                     foreach (var entry in dictionary)
                     {
@@ -100,6 +112,8 @@ namespace schoolManager.DAL
                         writer.WriteLine();
                     }
                 }
+
+                Console.WriteLine($"Backup written to: {fullPath}");
             }
             catch (Exception ex)
             {

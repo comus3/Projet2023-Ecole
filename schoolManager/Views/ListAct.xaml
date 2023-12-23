@@ -4,11 +4,40 @@
              xmlns:viewModels="clr-namespace:schoolManager.ViewModels"
              x:Class="schoolManager.Views.ListAct"
              Title="Liste des Activités">    
-    <ContentPage.BindingContext>
-        <viewModels:ListActVM />
-    </ContentPage.BindingContext>
-        <StackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-        <Label FontSize="22" FontAttributes="Bold" Text="{Binding Act}" VerticalOptions="End" />
-        <Button Text="Retour a la page Home" Clicked="Button_Home"/>
-        </StackLayout>
+    <StackLayout  Margin="0,100,0,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Grid>
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Activity Name" Grid.Column="0" />
+            <Label Text="Ects" Grid.Column="1" />
+            <Label Text="Code" Grid.Column="2" />
+            <Label Text="UidTeacher" Grid.Column="3" />
+    </Grid>
+    
+    <CollectionView ItemsSource="{Binding ActList}">
+    <CollectionView.ItemTemplate>
+        <DataTemplate>
+        <Grid>
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="{Binding Name}" Grid.Column="0" />
+            <Label Text="{Binding Ects}" Grid.Column="1" />
+            <Label Text="{Binding Code}" Grid.Column="2" />
+            <Label Text="{Binding UidTeacher}" Grid.Column="3" />
+        </Grid>
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+    </CollectionView>
+    <Button Text="Retour a la page Home" Clicked="Button_Home"/>
+    </StackLayout>
 </ContentPage>
