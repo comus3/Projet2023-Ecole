@@ -10,12 +10,28 @@
         <ColumnDefinition Width="*" />
         <ColumnDefinition Width="*" />
         <ColumnDefinition Width="*" />
-        <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
         <Label Text="FirstName" Grid.Column="0" />
         <Label Text="LastName" Grid.Column="1" />
+        <Label Text="Evaluations" Grid.Column="2"/>
     </Grid>
+
+    <CollectionView ItemsSource="{Binding EvalList}">
+    <CollectionView.ItemTemplate>
+        <DataTemplate>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="{Binding EvalList}" Grid.Column="2" />
+            <Label Text="{Binding NoteValue}" Grid.Column="2" />
+            
+        </Grid>
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+    </CollectionView>
 
     <CollectionView ItemsSource="{Binding StudList}">
     <CollectionView.ItemTemplate>
@@ -33,6 +49,8 @@
         </DataTemplate>
     </CollectionView.ItemTemplate>
     </CollectionView>
+
+    
     <Button Text="Retour a la page Home" Clicked="Button_Home"/>
     </StackLayout>
 </ContentPage>
