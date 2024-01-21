@@ -17,12 +17,14 @@ namespace schoolManager.Services
         private static Dictionary<string, List<string>> data;
         private static string filePath;
         //METHODES PUBLIQUES
-        public static void loadData()
+        public static void loadData(string fileName = null)
         {
             //constructor : makes the file path and then calls intit
 
             directoryPath = @"C:\Users\Cath\Desktop\Ecam\Backup_folder";
-            filePath = FindMostRecentBackup();
+            if (fileName == null){
+                filePath = FindMostRecentBackup();
+            }
             InitializeData(Path.Combine(directoryPath, filePath));
         }
         private static string FindMostRecentBackup()
@@ -73,6 +75,11 @@ namespace schoolManager.Services
             // };
             Dictionary<string, List<string>> packedData = packAll();
             JsonDataAccess.WriteDictionaryToFile(JsonDataAccess.GenerateBackupName(),packedData);
+        }
+        public static List<string> generateBackupList()
+        {
+            List<string> backupList = BackupFileFinder.FindBackupFileNames(directoryPath);
+            return backupList;
         }
         //METHODES PRIVEES
         private static void InitializeData(string filePath)
