@@ -38,5 +38,7 @@ La manipulation des fichiers JSON est réalisée de manière sécurisée, en uti
 
 ![Diagramme de classe Backend](Backend.png)
 ![Diagramme des classes de modeles](Models.png)
+
+
 NBP: toutes les classes des modeles sont des classes dynamiques et possèdent toutes des propriétés pour chaque attribut et un UID. Les attributs étants des objets sont en fait les UIDs des objets correscpondants
 
