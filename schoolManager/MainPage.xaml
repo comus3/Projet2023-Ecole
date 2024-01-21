@@ -18,5 +18,16 @@
         <Label Text="Gestion des données"/>
         <Button Text="Sauvegarde des données" Clicked="Save"/>
         <Button Text="Chargement des données" Clicked="Load"/>
+
+        <!-- Cascading Menu -->
+        <Picker x:Name="backupPicker"
+                Title="Select Backup"
+                SelectedIndexChanged="OnBackupSelectedIndexChanged">
+            <!-- Items will be populated dynamically -->
+        </Picker>
+
+        <!-- Load Data Button -->
+        <Button Text="Load Data"
+                Clicked="OnLoadDataClicked"/>
     </VerticalStackLayout>
 </ContentPage>

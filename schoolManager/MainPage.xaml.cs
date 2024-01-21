@@ -58,4 +58,29 @@ public partial class MainPage : ContentPage
 		AppServices.loadData();
 		DisplayAlert("Success","the data are loaded","Ok");			
 	}
+
+	private void InitializeBackupPicker()
+        {
+            // Populate the cascading menu with backup file names
+            var backupList = AppServices.GenerateBackupList();
+            foreach (var backupFileName in backupList)
+            {
+                backupPicker.Items.Add(backupFileName);
+            }
+        }
+
+        private void OnBackupSelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Handle selection change if needed
+            // You can access the selected item using: backupPicker.SelectedItem
+        }
+
+        private void OnLoadDataClicked(object sender, EventArgs e)
+        {
+            // Call AppServices.loadData with the selected item as parameter
+            string selectedBackup = (string)backupPicker.SelectedItem;
+            AppServices.LoadData(selectedBackup);
+        }
+
+
 }
