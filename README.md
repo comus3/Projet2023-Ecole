@@ -37,4 +37,5 @@ La manipulation des fichiers JSON est réalisée de manière sécurisée, en uti
 ## Diagrammes UML
 
 ![Diagramme de classe Backend](Backend.png)
+![Diagramme des classes de modeles](Models.png)
 
