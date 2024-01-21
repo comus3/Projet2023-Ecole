@@ -25,7 +25,16 @@ Les données du projet "School Manager" sont sauvegardées sous forme d'un fichi
 Lorsque vous fermez l'application, un processus de sauvegarde est déclenché pour enregistrer l'état actuel des données dans un fichier JSON. Ce fichier contiendra toutes les informations nécessaires sur les étudiants, enseignants, activités, évaluations, et autres données pertinentes.
 
 Lorsque vous démarrez à nouveau l'application, le programme vérifie la présence du fichier JSON de sauvegarde. Si le fichier est trouvé, les données sont chargées à partir de ce fichier, restaurant ainsi l'état précédent de l'application.
+Si vous souhaitez revenir en arriere vous en avez la possibilité
+Enfin, il est possible de sauvegarder manuellement a tout moment.
+
+Pour utiliser l'application il est possible que le programme ne trouve pas le dossier backup. Pour regleer le probleme il faut aller dans le fichier appServices et corriger le directory path ou dans certains cas creer un dossier backup si il ne s'est pas créé tout seul.
 
 ## Manipulation des Fichiers JSON
 
 La manipulation des fichiers JSON est réalisée de manière sécurisée, en utilisant les fonctionnalités fournies par les bibliothèques NewtonSoft.Json. 
+
+## Diagrammes UML
+
+![Diagramme de classe Backend](backend.png)
+
