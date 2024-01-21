@@ -45,6 +45,11 @@ public partial class AddAct : ContentPage
             // Create Activite object using the constructor
             var activite = new Activite(name, code, uidTeacher, ects);
 
+            DisplayAlert("Success", $"Activite created: {activite.Name} {activite.Code} {activite.Ects}", "OK");
+            nameEntry.Text = string.Empty;
+            codeEntry.Text = string.Empty;
+            ectsEntry.Text = string.Empty;
+
             // Perform any additional logic with the created Activite object
             // (e.g., save to database, display a message, etc.)
 

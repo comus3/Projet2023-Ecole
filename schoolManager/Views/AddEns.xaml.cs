@@ -21,6 +21,10 @@ public partial class AddEns : ContentPage
                 // Create Enseignant object using the constructor
                 Enseignant newEnseignant = new Enseignant(salaire, firstName, lastName);
 
+                DisplayAlert("Success", $"Enseignant created: {newEnseignant.FirstName} {newEnseignant.LastName} {newEnseignant.Salaire}", "OK");
+                firstNameEntry.Text = string.Empty;
+                lastNameEntry.Text = string.Empty;
+                salaireEntry.Text = string.Empty;
                 // Do something with the new Enseignant object if needed
                 // (e.g., add it to a list or perform some other operation)
             }

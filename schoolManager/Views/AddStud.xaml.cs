@@ -21,5 +21,7 @@ public partial class AddStud : ContentPage
 
                 // You can navigate to another page or display a message, for example:
             DisplayAlert("Success", $"Etudiant created: {newEtudiant.FirstName} {newEtudiant.LastName}", "OK");
+            FirstNameEntry.Text = string.Empty;
+            LastNameEntry.Text = string.Empty;
         }
 }

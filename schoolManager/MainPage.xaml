@@ -20,14 +20,14 @@
         <Button Text="Chargement des données" Clicked="Load"/>
 
         <!-- Cascading Menu -->
-        <Picker x:Name="backupPicker"
+        <!--Picker x:Name="backupPicker"
                 Title="Select Backup"
                 SelectedIndexChanged="OnBackupSelectedIndexChanged">
-            <!-- Items will be populated dynamically -->
+            < Items will be populated dynamically >
         </Picker>
 
-        <!-- Load Data Button -->
+        < Load Data Button >
         <Button Text="Load Data"
-                Clicked="OnLoadDataClicked"/>
+                Clicked="OnLoadDataClicked"/-->
     </VerticalStackLayout>
 </ContentPage>
