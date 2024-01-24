@@ -9,15 +9,13 @@
         <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />
         <ColumnDefinition Width="*" />
-        <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
         <Label Text="FirstName" Grid.Column="0" />
         <Label Text="LastName" Grid.Column="1" />
-        <Label Text="Evaluations" Grid.Column="2"/>
     </Grid>
 
-    <CollectionView ItemsSource="{Binding EvalList}">
+    <!--CollectionView ItemsSource="{Binding EvalList}">
     <CollectionView.ItemTemplate>
         <DataTemplate>
         <Grid>
@@ -31,14 +29,13 @@
         </Grid>
         </DataTemplate>
     </CollectionView.ItemTemplate>
-    </CollectionView>
+    </CollectionView-->
 
     <CollectionView ItemsSource="{Binding StudList}">
     <CollectionView.ItemTemplate>
         <DataTemplate>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
@@ -50,7 +47,6 @@
     </CollectionView.ItemTemplate>
     </CollectionView>
 
-    
     <Button Text="Retour a la page Home" Clicked="Button_Home"/>
     </StackLayout>
 </ContentPage>
