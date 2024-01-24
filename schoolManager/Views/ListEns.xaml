@@ -13,9 +13,9 @@
             <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label Text="FirstName" Grid.Column="0" />
-            <Label Text="LastName" Grid.Column="1" />
-            <Label Text="Salaire" Grid.Column="2" />
+            <Label Text="FirstName" FontAttributes="Bold" Grid.Column="0" />
+            <Label Text="LastName" FontAttributes="Bold" Grid.Column="1" />
+            <Label Text="Salaire" FontAttributes="Bold" Grid.Column="2" />
     </Grid>
     
     <CollectionView ItemsSource="{Binding DisplayList}">

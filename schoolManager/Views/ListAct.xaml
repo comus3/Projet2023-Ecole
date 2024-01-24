@@ -13,10 +13,10 @@
             <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label Text="Activity Name" Grid.Column="0" />
-            <Label Text="Ects" Grid.Column="1" />
-            <Label Text="Code" Grid.Column="2" />
-            <Label Text="UidTeacher" Grid.Column="3" />
+            <Label Text="Activity Name" FontAttributes="Bold" Grid.Column="0" />
+            <Label Text="Ects" FontAttributes="Bold" Grid.Column="1" />
+            <Label Text="Code" FontAttributes="Bold" Grid.Column="2" />
+            <Label Text="UidTeacher" FontAttributes="Bold" Grid.Column="3" />
     </Grid>
     
     <CollectionView ItemsSource="{Binding ActList}">

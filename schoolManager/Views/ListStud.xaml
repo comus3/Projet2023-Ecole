@@ -11,8 +11,8 @@
         <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Label Text="FirstName" Grid.Column="0" />
-        <Label Text="LastName" Grid.Column="1" />
+        <Label Text="FirstName" FontAttributes="Bold" Grid.Column="0" />
+        <Label Text="LastName" FontAttributes="Bold" Grid.Column="1" />
     </Grid>
 
     <!--CollectionView ItemsSource="{Binding EvalList}">
