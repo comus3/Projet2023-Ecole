@@ -34,6 +34,19 @@ Pour utiliser l'application il est possible que le programme ne trouve pas le do
 
 La manipulation des fichiers JSON est réalisée de manière sécurisée, en utilisant les fonctionnalités fournies par les bibliothèques NewtonSoft.Json. 
 
+## Principes SOLID
+
+L’un des 5 principes SOLID est le "Liskov Substitution Principle", il stipule qu’un type devrait toujours pouvoir être remplacé par son sous type sans que ça n’affecte la cohérence du code.
+Si on prend le code "Etudiant.cs", il s’agit de l’implémentation d’une sous classe Etudiant de la classe Personne. On peut utiliser un objet de la classe "Etudiant" partout où un objet de la classe "Person" est attendu sans que cela n’affecte le code.      
+On le voit avec la méthode "DisplayName()" de la classe "Person" dans la méthode Bulletin()" de la classe "Etudiant", la méthode peut directement être appelée sur un objet "Etudiant".
+
+Un autre principe SOLID, c’est celui de la responsabilité Unique (Single Responsability Principle). Il stipule que chaque classe et méthode à une responsabilité unique, une seule raison de changée.
+Si on prend le fichier "AppServices.cs", on a différentes méthodes qui sont appelées pour effectuer des opérations spécifiques et chacune d’elle à une responsabilité bien définie. On a par exemple,
+1.    La méthode "LoadData" qui est responsable du chargement des données à partir d’un fichier JSON pour qu’elles soient initialisées dans l’application.
+2.    La méthode "SaveChanges" qui est responsable de récupérer les données actuelles et de les sauvegarder dans un fichier JSON
+3.    La méthode "generateBackupList" qui est responsable de générer une liste des noms de fichier de sauvegardes disponible
+
+
 ## Diagrammes UML
 
 ![Diagramme de classe Backend](Backend.png)
