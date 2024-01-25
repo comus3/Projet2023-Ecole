@@ -47,8 +47,8 @@ Si on prend le fichier "AppServices.cs", on a différentes méthodes qui sont ap
 3.    La méthode "generateBackupList" qui est responsable de générer une liste des noms de fichier de sauvegardes disponible
 
 Pour le point 1) la methode LoadData ne s'occupe pas de faire toutes les opérations pour load mais de call certaines methodes et donc ne fait que une seule chose
-Pour le point 2) la methode SaveChanges va call une serie de methodes et donc ne doit pas faire toutes les operations pour Save
-Pour le point 3) la methode generateBackupList ne fait que une chose: trouver tous les noms de backups
+.Pour le point 2) la methode SaveChanges va call une serie de methodes et donc ne doit pas faire toutes les operations pour Save
+.Pour le point 3) la methode generateBackupList ne fait que une chose: trouver tous les noms de backups
 
 ## Diagrammes UML
 
